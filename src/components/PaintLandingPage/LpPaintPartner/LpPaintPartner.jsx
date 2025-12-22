@@ -7,7 +7,7 @@ import Image from "next/image";
 import "./LpPaintPartner.css"
 const LpPaintPartner = () => {
   return (
-    <div className="lpPaintPartner-container">
+    <div className="lpPaintPartner-container" >
       <div className="lpPaintPartner-content">
         <h2>Exclusive Painting Partners Trusted Across Bangalore</h2>
         <p>
@@ -31,6 +31,7 @@ const LpPaintPartner = () => {
           <Image src={yulu} alt="yulu" />
         </div>
       </div>
+      <span id="services"></span>
     </div>
   );
 };
