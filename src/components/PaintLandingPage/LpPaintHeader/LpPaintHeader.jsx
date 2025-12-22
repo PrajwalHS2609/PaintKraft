@@ -93,11 +93,20 @@ const LpPaintHeader = () => {
 
         <div className="lpPaintHeader-cover">
           <div className="lpPaintHeader-heading">
-            <h2>No Body Does Spray Painting Like Us! </h2>
-            <p>
-              Seamless finish, Flawless shine. The PaintKraft spray painting
-              difference.
-            </p>
+            <span className="lpPaintHeader-desktop">
+              <h2>No Body Does Spray Painting Like Us! </h2>
+              <p>
+                Seamless finish, Flawless shine. The PaintKraft spray painting
+                difference.
+              </p>
+            </span>
+            <span className="lpPaintHeader-mobile">
+              <h2>On-Time Home Painting You Can Trust</h2>
+              <p>
+                Seamless finish, Flawless shine. The PaintKraft Home painting
+                difference.
+              </p>
+            </span>
             <div className="lpPaintHeader-btn">
               <Link href="#services">
                 <button>Explore Now</button>
