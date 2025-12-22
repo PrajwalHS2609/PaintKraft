@@ -44,7 +44,7 @@ const LpPaintContact = () => {
     }
   };
   return (
-    <div className="lpPaintContact-container">
+    <div className="lpPaintContact-container" >
       <div className="lpPaintContact-wrapper">
         <div className="lpPaintContact-content">
           <ul>
@@ -99,9 +99,10 @@ const LpPaintContact = () => {
               </div>
             </li>
           </ul>
+          <span id="contactus"></span>
         </div>
-        <div className="lpPaintContact-content">
-          <form className="lpPaintContact-form" onSubmit={handleSubmit}>
+        <div className="lpPaintContact-content" >
+          <form className="lpPaintContact-form" onSubmit={handleSubmit} >
             <h3>Let Our Experts Help You</h3>
 
             <input type="text" name="Name" placeholder="Enter Your Name*" required />
@@ -135,7 +136,7 @@ const LpPaintContact = () => {
           </form>{" "}
         </div>
       </div>
-      <span id="faq"></span>
+      <span id="faq " ></span>
     </div>
   );
 };

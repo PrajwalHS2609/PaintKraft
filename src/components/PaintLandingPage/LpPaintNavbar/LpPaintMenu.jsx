@@ -109,7 +109,7 @@ const LpPaintMenu = () => {
             <li className="">
               <Link
                 id="menuNavLink"
-                href="#contact-us"
+                href="#contactus"
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
