@@ -121,7 +121,7 @@ const LpPaintFaq = () => {
                 </p>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item className="lpPaintFaq-accItem" eventKey="7">
+            <Accordion.Item className="lpPaintFaq-accItem" eventKey="8">
               <Accordion.Header className="lpPaintFaq-accHeader">
                 <h5>
                   9. Does Paintkraft offer warranty or after-service support?
