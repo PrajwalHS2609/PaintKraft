@@ -65,6 +65,26 @@ export default function RootLayout({
             `,
           }}
         ></script>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) !== 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17441114317/vVPECIDiwc4bEM2RyfxA',
+          'event_callback': callback
+        });
+        return false;
+      }
+    `,
+          }}
+        ></script>
+
       </head>
 
       <body className={montserrat.className}>
