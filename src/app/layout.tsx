@@ -53,6 +53,14 @@ export default function RootLayout({
       </head>
 
       <body className={montserrat.className}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NV4SSRH7"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <LpPaintNavbar />
         {children}
         <LpPaintFooter />
