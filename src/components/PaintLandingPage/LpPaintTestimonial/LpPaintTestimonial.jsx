@@ -75,7 +75,7 @@ const LpPaintTestimonial = () => {
                     From color consultation to execution, Paintkraft made the
                     whole process smooth and stress-free. Their express painting
                     service saved us days of work. The painters were courteous
-                    and well-supervised. Best painting experience we've had so
+                    and well-supervised. Best painting experience we had so
                     far in Bangalore.
                   </p>
                   <h3>- Sneha Rao</h3>
