@@ -4,6 +4,7 @@ import berger from "@/images/berger.png";
 import opus from "@/images/opus.png";
 import yulu from "@/images/yulu.png";
 import Image from "next/image";
+import "./../PaintLandingPage/LpPaintPartner/LpPaintPartner.css"
 const LpCoimbatorePartner = () => {
   return (
     <div className="lpPaintPartner-container" >

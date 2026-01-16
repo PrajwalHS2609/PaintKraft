@@ -3,6 +3,8 @@ import React from "react";
 import { Accordion } from "react-bootstrap";
 import faqImg from "@/images/faqImg.png";
 import Image from "next/image";
+
+import "./../PaintLandingPage/LpPaintFaq/LpPaintFaq.css";
 const LpCoimbatoreFaq = () => {
   return (
     <div className="lpPaintFaq-container">
