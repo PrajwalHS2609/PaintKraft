@@ -32,7 +32,7 @@ const LpPaintMenu = () => {
             <Link href="#home">Home</Link>
           </li>
           <li>
-            <Link href="#services">Services</Link>
+            <Link href="/services">Services</Link>
           </li>
           <li>
             <Link href="#why">Why Us</Link>

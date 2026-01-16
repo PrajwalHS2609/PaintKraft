@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import LpPaintNavbar from "../components/PaintLandingPage/LpPaintNavbar/LpPaintNavbar";
+import LpPaintNavbar from "../components/LpPaintNavbar/LpPaintNavbar";
 import LpPaintFooter from "../components/PaintLandingPage/LpPaintFooter/LpPaintFooter";
 import "@/components/styles.css"
 const montserrat = Montserrat({
