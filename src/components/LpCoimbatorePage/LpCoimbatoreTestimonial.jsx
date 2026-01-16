@@ -59,7 +59,7 @@ const LpCoimbatoreTestimonial = () => {
                     service.
                   </p>
                   <h3>- Priya S</h3>
-                  <h4>RS Puram,Coimbatore</h4>
+                  <h4>RS Puram ,Coimbatore</h4>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ const LpCoimbatoreTestimonial = () => {
                     recommend them in Coimbatore
                   </p>
                   <h3>- Arun M</h3>
-                  <h4>Peelamedu,Coimbatore</h4>
+                  <h4>Peelamedu ,Coimbatore</h4>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ const LpCoimbatoreTestimonial = () => {
                     Coimbatore.
                   </p>
                   <h3>- Lakshmi R</h3>
-                  <h4>Saibaba Colony,Coimbatore</h4>
+                  <h4>Saibaba Colony ,Coimbatore</h4>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ const LpCoimbatoreTestimonial = () => {
                     they’re the best.
                   </p>
                   <h3>- Suresh V</h3>
-                  <h4>Gandhipuram,Coimbatore</h4>
+                  <h4>Gandhipuram ,Coimbatore</h4>
                 </div>
               </div>
             </div>
