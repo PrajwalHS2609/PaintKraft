@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "./LpPaintHeader.css";
 import bannerImg from "@/images/LpBannerImg.png";
 import mobileBannerImg from "@/images/lpMobileBannerImg.jpg";
 
@@ -13,7 +12,7 @@ import {
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
 import Link from "next/link";
 import Swal from "sweetalert2";
-const LpPaintHeader = () => {
+const ServiceHeroSection = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
@@ -94,17 +93,15 @@ const LpPaintHeader = () => {
         <div className="lpPaintHeader-cover">
           <div className="lpPaintHeader-heading">
             <span className="lpPaintHeader-desktop">
-              <h2>No Body Does Spray Painting Like Us! </h2>
+              <h2>{props.title} </h2>
               <p>
-                Seamless finish, Flawless shine. The PaintKraft spray painting
-                difference.
+               {props.description}
               </p>
             </span>
             <span className="lpPaintHeader-mobile">
-              <h2>On-Time Home Painting You Can Trust</h2>
+              <h2>{props.mobTitle}</h2>
               <p>
-                Seamless finish, Flawless shine. The PaintKraft Home painting
-                difference.
+                {props.mobDescription}
               </p>
             </span>
             <div className="lpPaintHeader-btn">
@@ -204,4 +201,4 @@ const LpPaintHeader = () => {
   );
 };
 
-export default LpPaintHeader;
+export default ServiceHeroSection;

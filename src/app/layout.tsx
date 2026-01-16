@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import LpPaintNavbar from "../components/PaintLandingPage/LpPaintNavbar/LpPaintNavbar";
 import LpPaintFooter from "../components/PaintLandingPage/LpPaintFooter/LpPaintFooter";
-
+import "@/components/styles.css"
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500"],

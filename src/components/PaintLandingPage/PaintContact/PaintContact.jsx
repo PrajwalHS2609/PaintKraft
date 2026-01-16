@@ -1,12 +1,12 @@
 "use client"
 import React from "react";
-import "./LpPaintContact.css";
+import "./PaintContact.css";
 import { GiFist } from "react-icons/gi";
 import { AiFillSound } from "react-icons/ai";
 import { IoMdTimer } from "react-icons/io";
 import { MdFormatPaint } from "react-icons/md";
 import Swal from "sweetalert2";
-const LpPaintContact = () => {
+const PaintContact = () => {
     const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
@@ -44,15 +44,15 @@ const LpPaintContact = () => {
     }
   };
   return (
-    <div className="lpPaintContact-container" >
-      <div className="lpPaintContact-wrapper">
-        <div className="lpPaintContact-content">
+    <div className="paintContact-container" >
+      <div className="paintContact-wrapper">
+        <div className="paintContact-content">
           <ul>
             <li>
-              <div className="lpPaintContact-icon">
+              <div className="paintContact-icon">
                 <GiFist />
               </div>
-              <div className="lpPaintContact-list">
+              <div className="paintContact-list">
                 <h4>Complete Control at Your Fingertips</h4>
                 <p>
                   Experience hassle-free, zero-contact painting services with
@@ -61,7 +61,7 @@ const LpPaintContact = () => {
               </div>
             </li>
             <li>
-              <div className="lpPaintContact-icon">
+              <div className="paintContact-icon">
                 <MdFormatPaint />
               </div>
               <div className="">
@@ -73,7 +73,7 @@ const LpPaintContact = () => {
               </div>
             </li>
             <li>
-              <div className="lpPaintContact-icon">
+              <div className="paintContact-icon">
                 <IoMdTimer />
               </div>
               <div className="">
@@ -85,7 +85,7 @@ const LpPaintContact = () => {
               </div>
             </li>
             <li>
-              <div className="lpPaintContact-icon">
+              <div className="paintContact-icon">
                 <AiFillSound />
               </div>
               <div className="">
@@ -101,8 +101,8 @@ const LpPaintContact = () => {
           </ul>
           <span id="contactus"></span>
         </div>
-        <div className="lpPaintContact-content" >
-          <form className="lpPaintContact-form" onSubmit={handleSubmit} >
+        <div className="paintContact-content" >
+          <form className="paintContact-form" onSubmit={handleSubmit} >
             <h3>Let Our Experts Help You</h3>
 
             <input type="text" name="Name" placeholder="Enter Your Name*" required />
@@ -126,7 +126,7 @@ const LpPaintContact = () => {
 
             <button type="submit">Submit</button>
 
-            <div className="lpPaintContact-checkbox">
+            <div className="paintContact-checkbox">
               <label htmlFor="terms">
                 Your information is safe with us. We respect your privacy and
                 will only use your details to respond to your inquiry. No spam,
@@ -141,4 +141,4 @@ const LpPaintContact = () => {
   );
 };
 
-export default LpPaintContact;
+export default PaintContact;

@@ -3,10 +3,11 @@ import LpPaintPartner from "@/components/PaintLandingPage/LpPaintPartner/LpPaint
 import LpPaintServices from "@/components/PaintLandingPage/LpPaintServices/LpPaintServices";
 import LpPaintWhy from "@/components/PaintLandingPage/LpPaintWhy/LpPaintWhy";
 import LpPaintTestimonial from "@/components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
-import LpPaintContact from "@/components/PaintLandingPage/LpPaintContact/LpPaintContact";
 import LpPaintFaq from "@/components/PaintLandingPage/LpPaintFaq/LpPaintFaq";
+import PaintContact from './../components/PaintLandingPage/PaintContact/PaintContact';
 
 export default function LpPaint() {
+  
   return (
     <div>
       <LpPaintHeader />
@@ -16,7 +17,7 @@ export default function LpPaint() {
       <LpPaintWhy />
       <LpPaintTestimonial />
       {/* <LpPaintSteps /> */}
-      <LpPaintContact />
+      <PaintContact />
       <LpPaintFaq />
     </div>
   );
