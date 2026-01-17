@@ -306,3 +306,128 @@
     display: block;
   }
 }
+/* --------------------------------------------------------------- */
+
+.shadeEssentials-container {
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  padding: 30px;
+  background-color: var(--lpCustom2);
+}
+.shadeEssentials-container > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+/* NAVBAR */
+.shadeEssentials-navbar {
+  padding: 20px 0;
+}
+
+.shadeEssentials-inner {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.shade-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.routeActives {
+  box-shadow: 0 10px 10px rgb(137, 137, 137);
+}
+
+/* CONTENT */
+.shadeEssentials-content {
+  padding: 30px;
+}
+
+.shadeEssentials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.shade-item {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.shadeEssentials-content {
+  /* border: solid violet; */
+  padding: 30px;
+  width: 100%;
+}
+.shadeEssentials-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* border: solid green; */
+}
+.shadeEssentials-item > li {
+  /* border: solid blue; */
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  list-style: none;
+}
+.shadeEssentials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: solid red; */
+  padding: 10px;
+}
+.shadeEssentials-item > p:nth-child(2) {
+  margin-top: 10px;
+}
+.shadeEssentials-item > p:nth-child(3) {
+  margin-top: -10px;
+}
+@media screen and (max-width: 768px) {
+  .shadeEssentials-container {
+    width: 100%;
+    /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+    padding: 20px;
+    background-color: var(--lpCustom2);
+  }
+  .shadeEssentials-container > h2 {
+    font-size: 30px;
+  }
+  .shadeEssentials-content {
+    /* border: solid violet; */
+    padding: 20px;
+    width: 100%;
+  }
+  .shadeEssentials-wrapper {
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    /* border: solid green; */
+  }
+}
