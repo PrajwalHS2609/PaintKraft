@@ -76,8 +76,8 @@ const ServiceHeroSection = (props) => {
   return (
     <div className="lpPaintHeader-container">
       <div className="lpPaintHeader-content">
-        <Image
-          src={bannerImg}
+        <img
+          src={props.bannerImg}
           alt="Paintkraft Banner"
           className="lpPaintHeader-desktopImg"
           priority
@@ -94,15 +94,11 @@ const ServiceHeroSection = (props) => {
           <div className="lpPaintHeader-heading">
             <span className="lpPaintHeader-desktop">
               <h2>{props.title} </h2>
-              <p>
-               {props.description}
-              </p>
+              <p>{props.description}</p>
             </span>
             <span className="lpPaintHeader-mobile">
               <h2>{props.mobTitle}</h2>
-              <p>
-                {props.mobDescription}
-              </p>
+              <p>{props.mobDescription}</p>
             </span>
             <div className="lpPaintHeader-btn">
               <Link href="#services">

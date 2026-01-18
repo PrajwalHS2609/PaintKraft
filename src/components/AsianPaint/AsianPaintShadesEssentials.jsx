@@ -29,7 +29,7 @@ const shadesData = {
     ],
   },
   green: {
-    color: "green",
+    color: "#00FF00",
     shades: [
       { name: "Mint Green", bg: "#98FF98" },
       { name: "Olive Green", bg: "#808000" },
@@ -122,7 +122,7 @@ const AsianPaintShadesEssentials = () => {
           showDots={false}
           ssr={true} // Server-side rendering
           infinite={true}
-          autoPlay={true}
+          // autoPlay={true}
           autoPlaySpeed={3000}
           keyBoardControl={true}
         >
