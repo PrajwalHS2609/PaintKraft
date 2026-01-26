@@ -4,12 +4,17 @@ import LpPaintPartner from "../../components/PaintLandingPage/LpPaintPartner/LpP
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
-import LpPaintTestimonial from '../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial';
-
+import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
+import bannerImg from "@/images/LpBannerImg.png";
+// import mobileBannerImg from "@/images/lpMobileBannerImg.jpg";
 export default function ServicePage() {
   return (
     <div>
-      <ServiceHeroSection />
+      <ServiceHeroSection
+        bannerImg={bannerImg}
+        title="No Body Does Spray Painting Like Us!"
+        description="Seamless finish, Flawless shine. The PaintKraft spray painting difference."
+      />
       <LpPaintPartner />
       <LpPaintServices />
       <ServiceCal />

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import bannerImg from "@/images/LpBannerImg.png";
 import mobileBannerImg from "@/images/lpMobileBannerImg.jpg";
 
 import Image from "next/image";
@@ -76,7 +75,7 @@ const ServiceHeroSection = (props) => {
   return (
     <div className="lpPaintHeader-container">
       <div className="lpPaintHeader-content">
-        <img
+        <Image
           src={props.bannerImg}
           alt="Paintkraft Banner"
           className="lpPaintHeader-desktopImg"
