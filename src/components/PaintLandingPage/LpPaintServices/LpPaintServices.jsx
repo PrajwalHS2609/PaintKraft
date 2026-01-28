@@ -27,7 +27,9 @@ const LpPaintServices = () => {
         "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
       ],
       icon: <GiLargePaintBrush />,
+      link: "/home-painting",
     },
+
     {
       id: 2,
       img: apartment,
@@ -37,6 +39,7 @@ const LpPaintServices = () => {
         "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
       ],
       icon: <GiEmptyMetalBucketHandle />,
+      link: "",
     },
     {
       id: 3,
@@ -47,6 +50,7 @@ const LpPaintServices = () => {
         "Ideal for large surfaces and modern interiors, spray painting reduces drying time and ensures uniform color consistency with minimal wastage.",
       ],
       icon: <GiSpray />,
+      link: "",
     },
     {
       id: 4,
@@ -57,6 +61,7 @@ const LpPaintServices = () => {
         "Ideal for quick makeovers and urgent timelines, 1 Day Express Painting combines speed, precision, and professional execution for instant transformation.",
       ],
       icon: <GiEmptyMetalBucketHandle />,
+      link: "",
     },
     {
       id: 5,
@@ -67,6 +72,7 @@ const LpPaintServices = () => {
         "Customized patterns, finishes, and color combinations are expertly crafted to match your décor, enhancing elegance and long-lasting visual appeal.",
       ],
       icon: <TbTexture />,
+      link: "",
     },
     {
       id: 6,
@@ -77,6 +83,7 @@ const LpPaintServices = () => {
         "Professional waterproofing solutions prevent costly repairs by creating a strong moisture barrier for terraces, walls, and bathrooms.",
       ],
       icon: <IoWater />,
+      link: "",
     },
   ];
   return (
@@ -87,7 +94,7 @@ const LpPaintServices = () => {
       </div>
       <div className="lpPaintService-cardWrapper">
         {card.map((x) => (
-          <Link href={"/"} key={x.id}>
+          <Link href={x.link} key={x.id}>
             <div className="lpPaintService-card">
               <div className="lpPaintService-cardImg">
                 <Image src={x.img} alt={x.title} />
