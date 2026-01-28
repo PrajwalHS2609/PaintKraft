@@ -29,7 +29,7 @@ const LpPaintMenu = () => {
       <div className="lpPetsMenu-content">
         <ul>
           <li>
-            <Link href="#home">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
             <Link href="/services">Services</Link>
@@ -64,7 +64,7 @@ const LpPaintMenu = () => {
             <li className="">
               <Link
                 id="menuNavLink"
-                href="#home"
+                href="/"
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
