@@ -39,7 +39,7 @@ const LpPaintServices = () => {
         "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
       ],
       icon: <GiEmptyMetalBucketHandle />,
-      link: "",
+      link: "/apartment-painting-services-in-bangalore",
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ const LpPaintServices = () => {
         "Ideal for large surfaces and modern interiors, spray painting reduces drying time and ensures uniform color consistency with minimal wastage.",
       ],
       icon: <GiSpray />,
-      link: "",
+      link: "/spray-painting-services-in-bangalore",
     },
     {
       id: 4,
@@ -61,7 +61,7 @@ const LpPaintServices = () => {
         "Ideal for quick makeovers and urgent timelines, 1 Day Express Painting combines speed, precision, and professional execution for instant transformation.",
       ],
       icon: <GiEmptyMetalBucketHandle />,
-      link: "",
+      link: "/1-day-express-painting-services-in-bangalore",
     },
     {
       id: 5,
@@ -72,7 +72,7 @@ const LpPaintServices = () => {
         "Customized patterns, finishes, and color combinations are expertly crafted to match your décor, enhancing elegance and long-lasting visual appeal.",
       ],
       icon: <TbTexture />,
-      link: "",
+      link: "/texture-and-designer-services-in-bangalore",
     },
     {
       id: 6,
@@ -83,7 +83,7 @@ const LpPaintServices = () => {
         "Professional waterproofing solutions prevent costly repairs by creating a strong moisture barrier for terraces, walls, and bathrooms.",
       ],
       icon: <IoWater />,
-      link: "",
+      link: "/waterproofing-services-in-bangalore",
     },
   ];
   return (
