@@ -1,13 +1,15 @@
 import Link from "next/link";
 import React from "react";
 import "./ServiceCal.css"
+import PaintingQuotationCalculatorBanner from "./../../../images/PaintingQuotationCalculatorBanner.png"
+import Image from "next/image";
 const ServiceCal = () => {
   return (
     <div className="serviceCal-container">
       <Link href="/calculator">
-        <img
-          src="https://static.asianpaints.com/content/dam/asian_paints/sps-revamp/quotation-redirection/Web.jpg"
-          alt=""
+        <Image
+          src={PaintingQuotationCalculatorBanner}
+          alt="Painting Quotation Calculator Banner"
         />
       </Link>
     </div>

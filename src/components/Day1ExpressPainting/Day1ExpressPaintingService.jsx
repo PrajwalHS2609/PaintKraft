@@ -13,10 +13,8 @@ import {
   GiLargePaintBrush,
   GiSpray,
 } from "react-icons/gi";
-import serviceImg from "@/images/subService.png";
 import "@/components/PaintLandingPage/LpPaintServices/LpPaintServices.css";
-
-const HomePaintingService = () => {
+const Day1ExpressPaintingService = () => {
   return (
     <div className="lpPaintService-container">
       <div className="lpPaintService-heading">
@@ -24,6 +22,16 @@ const HomePaintingService = () => {
         <p>Experience Renovation That’s Quick, Neat, and Worry-Free</p>
       </div>
       <div className="lpPaintService-cardWrapper">
+        <ServiceCardProps
+          img={home}
+          title="Home Painting"
+          item={[
+            "Transform your interiors with our expert painting services, delivering superior finish, lasting quality, and modern style tailored to your space.",
+            "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
+          ]}
+          icon={<GiEmptyMetalBucketHandle />}
+          link="/home-painting-services-in-bangalore"
+        />
         <ServiceCardProps
           img={apartment}
           title="Apartment Painting"
@@ -43,16 +51,6 @@ const HomePaintingService = () => {
           ]}
           icon={<GiSpray />}
           link="/spray-painting-services-in-bangalore"
-        />
-        <ServiceCardProps
-          img={day1}
-          title="1 Day Express Painting"
-          item={[
-            "Complete home painting in just one day with a fast, efficient process that delivers high-quality finishes without disrupting your daily routine.",
-            "Ideal for quick makeovers and urgent timelines, 1 Day Express Painting combines speed, precision, and professional execution for instant transformation.",
-          ]}
-          icon={<GiEmptyMetalBucketHandle />}
-          link="/1-day-express-painting-services-in-bangalore"
         />
         <ServiceCardProps
           img={texture}
@@ -91,4 +89,4 @@ const HomePaintingService = () => {
   );
 };
 
-export default HomePaintingService;
+export default Day1ExpressPaintingService;

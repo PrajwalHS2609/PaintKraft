@@ -27,7 +27,7 @@ const LpPaintServices = () => {
         "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
       ],
       icon: <GiLargePaintBrush />,
-      link: "/home-painting",
+      link: "/home-painting-services-in-bangalore",
     },
 
     {

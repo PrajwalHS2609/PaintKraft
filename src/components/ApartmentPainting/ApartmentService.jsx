@@ -30,7 +30,7 @@ const ApartmentService = () => {
             "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
           ]}
           icon={<GiEmptyMetalBucketHandle />}
-          link="/home-painting"
+          link="/home-painting-services-in-bangalore"
         />
         <ServiceCardProps
           img={spray}
@@ -40,7 +40,7 @@ const ApartmentService = () => {
             "Ideal for large surfaces and modern interiors, spray painting reduces drying time and ensures uniform color consistency with minimal wastage.",
           ]}
           icon={<GiSpray />}
-          link=""
+          link="/spray-painting-services-in-bangalore"
         />
         <ServiceCardProps
           img={day1}
@@ -50,7 +50,7 @@ const ApartmentService = () => {
             "Ideal for quick makeovers and urgent timelines, 1 Day Express Painting combines speed, precision, and professional execution for instant transformation.",
           ]}
           icon={<GiEmptyMetalBucketHandle />}
-          link=""
+          link="/1-day-express-painting-services-in-bangalore"
         />
         <ServiceCardProps
           img={texture}
@@ -60,7 +60,7 @@ const ApartmentService = () => {
             "Customized patterns, finishes, and color combinations are expertly crafted to match your décor, enhancing elegance and long-lasting visual appeal.",
           ]}
           icon={<TbTexture />}
-          link=""
+          link="/texture-and-designer-services-in-bangalore"
         />
 
         <ServiceCardProps
@@ -71,14 +71,17 @@ const ApartmentService = () => {
             "Professional waterproofing solutions prevent costly repairs by creating a strong moisture barrier for terraces, walls, and bathrooms.",
           ]}
           icon={<IoWater />}
-          link=""
+          link="/waterproofing-services-in-bangalore"
         />
         <ServiceCardProps
           img={home}
           title="Commercial Painting"
-          item={[]}
+          item={[
+            "Transform your commercial interiors with our professional painting solutions, delivering premium finishes, long-lasting durability, and a modern aesthetic designed for business spaces.",
+            "Our trained and certified painters ensure precision, efficiency, and superior craftsmanship to elevate the appearance and functionality of your commercial environment.",
+          ]}
           icon={<GiLargePaintBrush />}
-          link=""
+          link="/commercial-painting-services-in-bangalore"
         />
       </div>
       <span id="why"></span>

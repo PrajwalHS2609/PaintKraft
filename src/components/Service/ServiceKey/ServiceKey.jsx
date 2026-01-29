@@ -1,39 +1,38 @@
-
-import "./ServiceKey.css"
+import "./ServiceKey.css";
 const ServiceKey = () => {
   return (
     <div className="serviceKey-container">
       <div className="serviceKey-wrapper">
         <div className="serviceKey-content">
           <div className="serviceKey-item">
-            <h2>3.5L+</h2>
+            <h2>1L + Sq.Ft </h2>
           </div>
           <div className="serviceKey-item">
-            <p>Consumer homes painted.</p>
-          </div>
-        </div>
-        <div className="serviceKey-content">
-          <div className="serviceKey-item">
-            <h2>95%+</h2>
-          </div>
-          <div className="serviceKey-item">
-            <p>On Time Site Completion.</p>
+            <p>Home Painted</p>
           </div>
         </div>
         <div className="serviceKey-content">
           <div className="serviceKey-item">
-            <h2>650+</h2>
+            <h2>99%</h2>
           </div>
           <div className="serviceKey-item">
-            <p>Towns serviceable across India</p>
+            <p>On-Time Site Completion.</p>
           </div>
         </div>
         <div className="serviceKey-content">
           <div className="serviceKey-item">
-            <h2>10 L</h2>
+            <h2>100+</h2>
           </div>
           <div className="serviceKey-item">
-            <p>10 Lakhs Satisfied customers.</p>
+            <p>Localities Serviceable across Bangalore</p>
+          </div>
+        </div>
+        <div className="serviceKey-content">
+          <div className="serviceKey-item">
+            <h2>5K</h2>
+          </div>
+          <div className="serviceKey-item">
+            <p> Satisfied customers.</p>
           </div>
         </div>
       </div>

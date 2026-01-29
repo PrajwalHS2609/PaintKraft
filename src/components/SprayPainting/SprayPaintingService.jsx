@@ -13,10 +13,8 @@ import {
   GiLargePaintBrush,
   GiSpray,
 } from "react-icons/gi";
-import serviceImg from "@/images/subService.png";
 import "@/components/PaintLandingPage/LpPaintServices/LpPaintServices.css";
-
-const HomePaintingService = () => {
+const SprayPaintingService = () => {
   return (
     <div className="lpPaintService-container">
       <div className="lpPaintService-heading">
@@ -24,6 +22,16 @@ const HomePaintingService = () => {
         <p>Experience Renovation That’s Quick, Neat, and Worry-Free</p>
       </div>
       <div className="lpPaintService-cardWrapper">
+        <ServiceCardProps
+          img={home}
+          title="Home Painting"
+          item={[
+            "Transform your interiors with our expert painting services, delivering superior finish, lasting quality, and modern style tailored to your space.",
+            "Our trained and certified painters bring precision, care, and craftsmanship to enhance the beauty and life of your interiors.",
+          ]}
+          icon={<GiEmptyMetalBucketHandle />}
+          link="/home-painting-services-in-bangalore"
+        />
         <ServiceCardProps
           img={apartment}
           title="Apartment Painting"
@@ -33,16 +41,6 @@ const HomePaintingService = () => {
           ]}
           icon={<GiEmptyMetalBucketHandle />}
           link="/apartment-painting-services-in-bangalore"
-        />
-        <ServiceCardProps
-          img={spray}
-          title="Spray Painting"
-          item={[
-            "Spray painting delivers a smooth, even, and seamless finish, ensuring faster coverage and a premium look compared to traditional brush or roller methods.",
-            "Ideal for large surfaces and modern interiors, spray painting reduces drying time and ensures uniform color consistency with minimal wastage.",
-          ]}
-          icon={<GiSpray />}
-          link="/spray-painting-services-in-bangalore"
         />
         <ServiceCardProps
           img={day1}
@@ -91,4 +89,4 @@ const HomePaintingService = () => {
   );
 };
 
-export default HomePaintingService;
+export default SprayPaintingService;

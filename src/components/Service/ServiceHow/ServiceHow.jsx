@@ -1,13 +1,15 @@
 import React from "react";
 import "./ServiceHow.css";
+import Image from "next/image";
+import Howitworks from "./../../../images/Howitworks.png"
 const ServiceHow = () => {
   return (
     <div className="serviceHow-container">
       <div className="serviceHow-content">
         <h2>How it works!</h2>
-        <img
-          src="https://static.asianpaints.com/content/dam/asian_paints/sps-revamp/how-it-works/how-it-works-desk-new.webp"
-          alt=""
+        <Image
+          src={Howitworks}
+          alt="How it works"
         />
       </div>
       <div className="serviceHow-content">
@@ -18,10 +20,13 @@ const ServiceHow = () => {
             </div>
             <div>
               <div className="serviceHow-itemContent">
-                <h4>Sign up for the service</h4>
+                <h4>Reach out for the service</h4>
               </div>
               <div>
-                <p>Sign up & our executive will set up a home visit time.</p>
+                <p>
+                  Contact us, and our executive will schedule a convenient home
+                  visit at your preferred time.
+                </p>
               </div>
             </div>
           </li>
@@ -31,12 +36,12 @@ const ServiceHow = () => {
             </div>
             <div>
               <div className="serviceHow-itemContent">
-                <h4>Product & site consultation</h4>
+                <h4>Site inspection and consultation</h4>
               </div>
               <div>
                 <p>
-                  The associate will evaluate the home and provide a digital
-                  quote.
+                  Our specialist will assess the site requirements and share a
+                  detailed digital quotation.
                 </p>
               </div>
             </div>
@@ -51,7 +56,8 @@ const ServiceHow = () => {
               </div>
               <div>
                 <p>
-                  On approval of the digital quote, select your preferred shade.
+                  Once the quotation is approved, choose your desired color
+                  shades with expert guidance.{" "}
                 </p>
               </div>
             </div>
@@ -62,12 +68,12 @@ const ServiceHow = () => {
             </div>
             <div>
               <div className="serviceHow-itemContent">
-                <h4>Pre-painting work</h4>
+                <h4>Pre-painting preparation</h4>
               </div>
               <div>
                 <p>
-                  Before painting, we will cover your home to protect your
-                  furniture.
+                  Prior to painting, we carefully cover furniture and surfaces
+                  to ensure complete protection.
                 </p>
               </div>
             </div>
@@ -78,13 +84,13 @@ const ServiceHow = () => {
             </div>
             <div>
               <div className="serviceHow-itemContent">
-                <h4>Site execution</h4>
+                <h4>Painting execution</h4>
               </div>
               <div>
                 <p>
-                  Our trained painters will use machine painting tools to
-                  provide your walls the best finish while completing work on
-                  time.
+                  Our skilled painters use advanced machine painting tools to
+                  deliver a flawless finish while completing the project on
+                  schedule.
                 </p>
               </div>
             </div>
@@ -95,12 +101,12 @@ const ServiceHow = () => {
             </div>
             <div>
               <div className="serviceHow-itemContent">
-                <h4>Site handover</h4>
+                <h4>Final handover</h4>
               </div>
               <div>
                 <p>
-                  After your home is ready, we will clean up and provide tips
-                  tricks to take care of the walls.
+                  After completion, we clean the site thoroughly and share
+                  simple care tips to help maintain your walls long-term.
                 </p>
               </div>
             </div>
