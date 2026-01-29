@@ -112,8 +112,8 @@ export default function HomePainting() {
           title="Beautiful Homes Start with Great Paint"
           description="Expert painting services that transform your home with flawless finishes"
         />
-        <LpPaintPartner />
         <HomePaintingTopContent />
+        <LpPaintPartner />
         <HomePaintingService />
         <ServiceCal />
         <ServiceKey />
