@@ -2,10 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import { PortableText } from "@portabletext/react";
+import type { PortableTextBlock } from "@portabletext/types";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "@/components/BlogPage/BlogSidebar/Blog.css";
-import { client } from "../../sanity/client";
+import { client } from "@/sanity/client";
 
 /* ---------------- TYPES ---------------- */
 
@@ -13,7 +14,10 @@ type Author = {
   _id: string;
   name: string;
   designation?: string;
-  bio?: any;
+  bio?: PortableTextBlock[];
+  instagram?: string | null;
+  linkedin?: string | null;
+  twitter?: string | null;
   mainImage?: {
     asset?: {
       url?: string;
@@ -39,6 +43,9 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
             name,
             designation,
             bio,
+            instagram,
+            linkedin,
+            twitter,
             mainImage{
               asset->{url}
             }
@@ -46,7 +53,10 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
         }`,
         { slug }
       )
-      .then((data) => setAuthor(data?.author ?? null))
+      .then((data) => {
+        console.log("AUTHOR 👉", data?.author);
+        setAuthor(data?.author ?? null);
+      })
       .catch(console.error);
   }, [slug]);
 
@@ -70,9 +80,35 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
       {author.bio && <PortableText value={author.bio} />}
 
       <div className="blogAuthorSocial">
-        <FaInstagram className="authorSocialIcon" />
-        <FaLinkedin className="authorSocialIcon" />
-        <FaXTwitter className="authorSocialIcon" />
+        {author.instagram && (
+          <a
+            href={author.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="authorSocialIcon" />
+          </a>
+        )}
+
+        {author.linkedin && (
+          <a
+            href={author.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="authorSocialIcon" />
+          </a>
+        )}
+
+        {author.twitter && (
+          <a
+            href={author.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXTwitter className="authorSocialIcon" />
+          </a>
+        )}
       </div>
     </div>
   );

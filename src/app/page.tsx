@@ -5,6 +5,7 @@ import LpPaintWhy from "@/components/PaintLandingPage/LpPaintWhy/LpPaintWhy";
 import LpPaintTestimonial from "@/components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import LpPaintFaq from "@/components/PaintLandingPage/LpPaintFaq/LpPaintFaq";
 import PaintContact from './../components/PaintLandingPage/PaintContact/PaintContact';
+import HomeBlog from "@/components/PaintLandingPage/HomeBlog/HomeBlog.jsx"
 export const metadata = {
   title: "Home Painting Service in Bangalore | House Painting Price in Bangalore",
   description:
@@ -26,7 +27,7 @@ export default function LpPaint() {
       {/* <LpPaintSteps /> */}
       <PaintContact />
       <LpPaintFaq />
-      
+      <HomeBlog/>
     </div>
   );
 }
