@@ -106,7 +106,6 @@ export default function Day1ExpressPainting() {
           description="Fast professional painting service delivering flawless results within one day"
         />
         <Day1ExpressPaintingTopContent />
-        <LpPaintServices />
         <Day1ExpressPaintingService />
         <ServiceCal />
         <ServiceKey />
