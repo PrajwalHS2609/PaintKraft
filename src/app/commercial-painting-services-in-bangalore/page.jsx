@@ -16,7 +16,7 @@ export const metadata = {
   title:
     "Commercial Painting Service in Bangalore | Office Painting Price in Bangalore",
   description:
-    "Waterproofing Service in Bangalore has become an essential requirement for homeowners who want to protect their property from water damage, dampness, seepage, and structural deterioration.",
+    "Commercial Painting Service in Bangalore has become a critical requirement for businesses that want to maintain a professional image, improve employee productivity, and create a welcoming environment for clients and visitors",
   canonical:
     "https://primecleanco.in/commercial-painting-services-in-bangalore",
 };
@@ -103,8 +103,8 @@ export default function CommercialPage() {
       <div>
         <ServiceHeroSection
           bannerImg={serviceImg}
-          title="Perfect Paint for Perfect Apartments"
-          description="Professional painting services designed to enhance modern apartment living spaces."
+          title="Premium Paint for Productive Spaces"
+          description="Professional commercial painting solutions enhancing aesthetics, durability, and workplace productivity. "
         />
         <CommercialPaintingTopContent />
         <LpPaintPartner />

@@ -26,6 +26,7 @@ export default function LpPaint() {
       {/* <LpPaintSteps /> */}
       <PaintContact />
       <LpPaintFaq />
+      
     </div>
   );
 }
