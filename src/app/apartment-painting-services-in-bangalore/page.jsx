@@ -105,7 +105,7 @@ export default function Apartment() {
           title="Perfect Paint for Perfect Apartments"
           description="Professional painting services designed to enhance modern apartment living spaces."
         />
-                <ApartmentPaintingTopContent />
+        <ApartmentPaintingTopContent />
         <LpPaintPartner />
         <ApartmentService />
         <ServiceCal />

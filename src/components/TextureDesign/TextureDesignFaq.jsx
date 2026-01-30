@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import faqImg from "@/images/faqImg.png";
-const Day1ExpressPaintingFaq = () => {
+const TextureDesignFaq = () => {
   return (
     <div className="paintFaq-container">
       <h2>Frequently Asked Questions</h2>
@@ -13,140 +13,134 @@ const Day1ExpressPaintingFaq = () => {
           <Accordion defaultActiveKey="0">
             <Accordion.Item className="paintFaq-accItem" eventKey="0">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>1. What is 1 Day Express Painting Service in Bangalore?</h5>
+                <h5>
+                  1. What are Texture & Designer Walls Services in Bangalore?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  1 Day Express Painting Service in Bangalore is a fast-track
-                  painting solution where professional home painting is
-                  completed within 24 hours using advanced tools, skilled
-                  painters, and quick-drying paints.
+                  Texture & Designer Walls Services in Bangalore involve
+                  applying decorative wall textures and designer finishes to
+                  create stylish, premium-looking interiors for homes and
+                  apartments.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="1">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  2. Is 1 Day Express Painting suitable for homes and
-                  apartments?
-                </h5>
+                <h5>2. Where can texture walls be applied in a home?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, this service is ideal for homes and apartments that
-                  require quick painting with minimal disruption. It is commonly
-                  used for occupied homes, rental properties, and resale
-                  apartments.
+                  Texture walls are commonly applied in living rooms, bedrooms,
+                  TV units, dining areas, foyers, and feature walls to create a
+                  focal point and enhance aesthetics.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="2">
               <Accordion.Header className="paintFaq-accHeader">
                 <h5>
-                  3. What type of Home Painting in Bangalore can be done in one
-                  day?
+                  3. What types of Texture Walls in Bangalore do you offer?
                 </h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Typically, selective rooms, interior walls, apartments, or
-                  partial home painting can be completed in one day, depending
-                  on surface condition and scope of work.
+                  Paintkraft offers a wide range of Texture Walls in Bangalore,
+                  including marble textures, concrete finishes, metallic
+                  textures, stucco designs, abstract patterns, and modern
+                  designer wall finishes.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="3">
               <Accordion.Header className="paintFaq-accHeader">
                 <h5>
-                  4. How does Paintkraft complete Residential painting in
-                  Bangalore within one day?
+                  4. How much does Wall Texture Painting Price in Bangalore
+                  cost?
                 </h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Paintkraft uses proper pre-planning, trained manpower, machine
-                  painting tools, and fast-drying premium paints to deliver
-                  Residential painting in Bangalore efficiently within 24 hours.
+                  Wall Texture Painting Price in Bangalore depends on wall size,
+                  texture type, design complexity, and material quality.
+                  Paintkraft provides transparent pricing with detailed digital
+                  quotations.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="4">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>5. What is the Apartment Painting Price in Bangalore
-                for express service? </h5> 
+                <h5>
+                  {" "}
+                  5. Do you provide Texture Designer Walls Service Near Me
+                  across Bangalore?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Apartment Painting Price in Bangalore for express services
-                  depends on carpet area, paint brand, number of rooms, and
-                  paint type. Paintkraft provides transparent digital quotations
-                  with no hidden charges.
+                  Yes, Paintkraft offers Texture Designer Walls Service Near Me
+                  across all major areas of Bangalore for apartments, villas,
+                  and independent houses.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="5">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  6. Do you provide House Painting Service Near Me with express
-                  execution?
-                </h5>
+                <h5>6. Is texture painting suitable for apartments?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, Paintkraft offers House Painting Service Near Me across
-                  Bangalore with 1 Day Express Painting options for apartments
-                  and homes.
+                  Yes, texture painting is ideal for apartments as it adds style
+                  and depth without taking up space. Paintkraft ensures clean
+                  execution and compliance with apartment society rules.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="6">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  7. Will furniture and flooring be protected during express
-                  painting?
-                </h5>
+                <h5>7. How long does texture wall painting take?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Absolutely. All furniture, flooring, and fixtures are properly
-                  covered and protected before starting the express painting
-                  process.
+                  Most texture wall projects are completed within 1 to 3 days,
+                  depending on wall size, design complexity, and drying time.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="7">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5> 8. Are fast-drying paints safe for families?</h5>
+                <h5> 8. Are textured walls difficult to maintain?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, Paintkraft uses low-VOC and eco-friendly fast-drying
-                  paints that are safe for families, children, and pets.
+                  No, modern textured walls are durable and easy to maintain.
+                  Paintkraft uses high-quality materials that resist dust and
+                  minor wear.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="8">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5> 9. Can I stay in my home during the painting process?</h5>
+                <h5> 9. Will texture walls hide wall imperfections?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  In most cases, yes. The express painting process is planned to
-                  minimize disruption, making it suitable for occupied homes.
+                  Yes, Texture Walls in Bangalore help conceal minor wall
+                  imperfections such as uneven surfaces and hairline cracks,
+                  making them ideal for renovation projects.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="8">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  10. Is post-painting cleanup included in 1 Day Express
-                  Painting Service?
-                </h5>
+                <h5>10. Is post-service cleanup included?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, complete cleanup and site handover are included on the
-                  same day as part of Paintkraft’s express service.
+                  Yes, complete site cleanup and final handover are included in
+                  all Texture & Designer Walls Services in Bangalore provided by
+                  Paintkraft.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
@@ -160,4 +154,4 @@ const Day1ExpressPaintingFaq = () => {
   );
 };
 
-export default Day1ExpressPaintingFaq;
+export default TextureDesignFaq;

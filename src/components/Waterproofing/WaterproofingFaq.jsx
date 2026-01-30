@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import faqImg from "@/images/faqImg.png";
-const Day1ExpressPaintingFaq = () => {
+const WaterproofingFaq = () => {
   return (
     <div className="paintFaq-container">
       <h2>Frequently Asked Questions</h2>
@@ -13,140 +13,129 @@ const Day1ExpressPaintingFaq = () => {
           <Accordion defaultActiveKey="0">
             <Accordion.Item className="paintFaq-accItem" eventKey="0">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>1. What is 1 Day Express Painting Service in Bangalore?</h5>
+                <h5> 1. What is Waterproofing Service in Bangalore?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  1 Day Express Painting Service in Bangalore is a fast-track
-                  painting solution where professional home painting is
-                  completed within 24 hours using advanced tools, skilled
-                  painters, and quick-drying paints.
+                  Waterproofing Service in Bangalore involves applying
+                  protective treatments to prevent water leakage, seepage,
+                  dampness, and moisture damage in residential properties.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="1">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  2. Is 1 Day Express Painting suitable for homes and
-                  apartments?
-                </h5>
+                <h5>2. Why is House Waterproofing in Bangalore important?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, this service is ideal for homes and apartments that
-                  require quick painting with minimal disruption. It is commonly
-                  used for occupied homes, rental properties, and resale
-                  apartments.
+                  House Waterproofing in Bangalore is essential due to heavy
+                  monsoons and high humidity, which can cause wall dampness,
+                  paint peeling, mold growth, and structural damage if left
+                  untreated.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="2">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  3. What type of Home Painting in Bangalore can be done in one
-                  day?
-                </h5>
+                <h5>3. Which areas of a home require waterproofing?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Typically, selective rooms, interior walls, apartments, or
-                  partial home painting can be completed in one day, depending
-                  on surface condition and scope of work.
+                  Common areas include terraces, bathrooms, balconies, kitchens,
+                  basements, external walls, and roofs, as these zones are most
+                  exposed to water and moisture.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="3">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  4. How does Paintkraft complete Residential painting in
-                  Bangalore within one day?
-                </h5>
+                <h5>4. What is the Home Waterproofing Price in Bangalore?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Paintkraft uses proper pre-planning, trained manpower, machine
-                  painting tools, and fast-drying premium paints to deliver
-                  Residential painting in Bangalore efficiently within 24 hours.
+                  Home Waterproofing Price in Bangalore depends on the affected
+                  area, surface condition, waterproofing method, and materials
+                  used. Paintkraft provides transparent pricing with digital
+                  quotations.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="4">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>5. What is the Apartment Painting Price in Bangalore
-                for express service? </h5> 
+                <h5>
+                  {" "}
+                  5. Do you provide Waterproofing Service Near Me across
+                  Bangalore?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Apartment Painting Price in Bangalore for express services
-                  depends on carpet area, paint brand, number of rooms, and
-                  paint type. Paintkraft provides transparent digital quotations
-                  with no hidden charges.
+                  Yes, Paintkraft offers Waterproofing Service Near Me across
+                  all major areas of Bangalore for apartments, villas, and
+                  independent houses.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="5">
               <Accordion.Header className="paintFaq-accHeader">
                 <h5>
-                  6. Do you provide House Painting Service Near Me with express
-                  execution?
+                  6. How long does Residential Waterproofing in Bangalore last?
                 </h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, Paintkraft offers House Painting Service Near Me across
-                  Bangalore with 1 Day Express Painting options for apartments
-                  and homes.
+                  When done professionally, Residential Waterproofing in
+                  Bangalore can last several years depending on the treatment
+                  type and maintenance.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="6">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  7. Will furniture and flooring be protected during express
-                  painting?
-                </h5>
+                <h5>7. Can waterproofing be done on old buildings?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Absolutely. All furniture, flooring, and fixtures are properly
-                  covered and protected before starting the express painting
-                  process.
+                  Yes, Paintkraft provides House Waterproofing in Bangalore
+                  solutions suitable for both new and old buildings, including
+                  crack treatment and restoration waterproofing.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="7">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5> 8. Are fast-drying paints safe for families?</h5>
+                <h5> 8. Is waterproofing required before painting?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, Paintkraft uses low-VOC and eco-friendly fast-drying
-                  paints that are safe for families, children, and pets.
+                  Yes, waterproofing before painting helps prevent paint
+                  peeling, bubbling, and damp patches, ensuring better
+                  durability of paint finishes.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="8">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5> 9. Can I stay in my home during the painting process?</h5>
+                <h5> 9. How long does waterproofing work take?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  In most cases, yes. The express painting process is planned to
-                  minimize disruption, making it suitable for occupied homes.
+                  Most waterproofing projects are completed within 2 to 5 days,
+                  depending on the area size, severity of damage, and treatment
+                  type.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="paintFaq-accItem" eventKey="8">
               <Accordion.Header className="paintFaq-accHeader">
-                <h5>
-                  10. Is post-painting cleanup included in 1 Day Express
-                  Painting Service?
-                </h5>
+                <h5>10. Is post-service inspection and cleanup included?</h5>
               </Accordion.Header>
               <Accordion.Body className="paintFaq-body">
                 <p>
-                  Yes, complete cleanup and site handover are included on the
-                  same day as part of Paintkraft’s express service.
+                  Yes, Paintkraft includes final inspection, cleanup, and
+                  guidance after completing all Residential Waterproofing in
+                  Bangalore services.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
@@ -160,4 +149,4 @@ const Day1ExpressPaintingFaq = () => {
   );
 };
 
-export default Day1ExpressPaintingFaq;
+export default WaterproofingFaq;
