@@ -1,3 +1,4 @@
+"use client"
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -5,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LpPaintNavbar from "../components/LpPaintNavbar/LpPaintNavbar";
 import LpPaintFooter from "../components/PaintLandingPage/LpPaintFooter/LpPaintFooter";
 import "@/components/styles.css"
+import Loader from './../components/Loader/Loader';
+import { useEffect, useState } from "react";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
@@ -15,6 +18,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // fake loading for animation effect
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1200);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <html lang="en">
       <head>
@@ -97,7 +110,7 @@ export default function RootLayout({
           />
         </noscript>
         <LpPaintNavbar />
-        {children}
+        {loading ? <Loader /> : children}
         <LpPaintFooter />
       </body>
     </html>
