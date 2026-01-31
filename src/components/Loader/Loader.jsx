@@ -3,7 +3,7 @@
 import React from "react";
 import "./Loader.css";
 import Image from "next/image";
-import logo from "./../../Images/favicon.png"
+import logo from "./../../images/favicon.png"
 const Loader = () => {
   return (
     <div className="loader-wrapper">
