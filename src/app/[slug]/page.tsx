@@ -8,6 +8,7 @@ import { client } from "@/sanity/client";
 import PostContent, { PostContentType } from "@/components/SanityComponents/Post";
 import BlogSidebar from './../../components/BlogPage/BlogSidebar/BlogSidebar';
 import ServiceContent, { ServiceContentType } from "@/components/SanityComponents/ServiceContent";
+import SanityColorShade, { PaintShadesData } from "@/components/SanityComponents/SanityColorShade";
 
 /* =========================
    GROQ QUERY
@@ -45,6 +46,28 @@ const SERVICE_CONTENT_QUERY = `{
 
 }`;
 
+
+export const PAINT_SHADES_QUERY = `
+*[_type == "paintShades" && slug.current == $slug][0]{
+  hero{
+    title,
+    description,
+    bannerImg
+  },
+  title,
+  metaTitle,
+  metaDescription,
+  categories[]{
+    key,
+    displayName,
+    color,
+    shades[]{
+      name,
+      bg
+    }
+  }
+}
+`;
 
 type SlugParams = { slug: string };
 
@@ -116,12 +139,25 @@ export async function generateMetadata({
         "Professional services by Prime Clean.",
     };
   }
+  // 3️⃣ Paint Shades
+  const paintMeta = await client.fetch<{ title?: string; metaTitle?: string; metaDescription?: string } | null>(
+    `*[_type == "paintShades" && slug.current == $slug][0]{ title, metaTitle, metaDescription }`,
+    { slug }
+  );
+  if (paintMeta) {
+    return {
+      title: paintMeta.metaTitle || paintMeta.title || "Paint Shades",
+      description: paintMeta.metaDescription || "Explore premium wall paint shades and colours.",
+    };
+  }
+
   // 3️⃣ Not found
   return {
     title: "Not Found | Prime Clean",
     description: "The page you are looking for does not exist.",
   };
 }
+
 
 /* =========================
    PAGE
@@ -171,7 +207,11 @@ export default async function SlugPage({
       />
     );
   }
-
+  // 3️⃣ Paint Shades
+  const paintShadesData = await client.fetch<PaintShadesData | null>(PAINT_SHADES_QUERY, { slug });
+  if (paintShadesData) {
+    return <SanityColorShade data={paintShadesData} />;
+  }
 // ✅ FINAL FALLBACK
 notFound();
 }

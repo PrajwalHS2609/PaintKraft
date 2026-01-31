@@ -1,142 +1,203 @@
-import React from 'react'
+"use client";
+import React from "react";
+import mobileBannerImg from "@/images/lpMobileBannerImg.jpg";
+
+import {
+  MdCurrencyRupee,
+  MdOutlineCleaningServices,
+  MdOutlineShield,
+} from "react-icons/md";
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
-import { RxTimer } from "react-icons/rx";
-import { MdCurrencyRupee } from "react-icons/md";
-import { ImLeaf } from "react-icons/im";
-import { GrPlan } from "react-icons/gr";
-import { FaEye } from "react-icons/fa6";
-import { BsTools } from "react-icons/bs";
-import { FaUsersCog } from "react-icons/fa";
+import Link from "next/link";
+import Swal from "sweetalert2";
+import Image from "next/image";
 
 const SanityHeroSection = (props) => {
-      const content = [
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // ✅ Add your Web3Forms access key
+    formData.append("access_key", "2e63432e-e411-4617-8563-fa5f8bb00932");
+
+    const object = Object.fromEntries(formData.entries());
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Mail Sent successfully",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again later.",
+        icon: "error",
+      });
+    }
+  };
+
+  const content = [
     {
       id: 1,
-      icon: <FaUsersCog />,
-      text: "Trained Cleaning Experts",
+      icon: <LuBadgeCheck />,
+      text: "Quality of Materials Used",
     },
     {
       id: 2,
-      icon: <RxTimer />,
-      text: "On-Time Service Promise",
+      icon: <MdOutlineShield />,
+      text: "Surface Preparation & Protection",
     },
     {
       id: 3,
       icon: <LuPaintbrush />,
-      text: "Deep Hygienic Cleaning",
+      text: "Skilled & Professional Painters",
     },
-    { id: 4, icon: <BsTools />, text: "Professional Tools" },
+    { id: 4, icon: <MdCurrencyRupee />, text: "Clear Pricing & Timeline" },
     {
       id: 5,
-      icon: <FaEye />,
-      text: "Expert Supervision",
-    },
-    {
-      id: 6,
-      icon: <ImLeaf />,
-      text: "Eco-Safe Cleaning Products",
-    },
-    {
-      id: 7,
-      icon: <GrPlan />,
-      text: "Custom Cleaning Plans",
-    },
-    {
-      id: 8,
-      icon: <LuPaintbrush />,
-      text: "Safe & Secure Service",
-    },
-    { id: 9, icon: <MdCurrencyRupee />, text: "Clear & Transparent Pricing" },
-    {
-      id: 10,
-      icon: <LuBadgeCheck />,
-      text: "Guaranteed Satisfaction",
+      icon: <MdOutlineCleaningServices />,
+      text: "Clean Finish & Post-Service Cleanup",
     },
   ];
   return (
- <div className="hero2-container">
-      {/* HERO */}
-      <div className="hero2-banner">
-        <img src={props.bannerImg} alt={props.title}/>
+    <div className="lpPaintHeader-container">
+      <div className="lpPaintHeader-content">
+        <img
+          src={props.bannerImg}
+          alt="Paintkraft Banner"
+          className="lpPaintHeader-desktopImg"
+          priority
 
-        <div className="hero2-content">
-          {/* LEFT */}
-          <div className="hero2-text" id='hero2-title'>
-            {/* <span className="hero2-badge">Trusted by 5,000+ Homeowners</span> */}
+        />
 
-            <h2>{props.title}</h2>
+        <Image
+          src={mobileBannerImg}
+          alt="Paintkraft Mobile Banner"
+          className="lpPaintHeader-mobileImg"
+          priority
+          width={1800}
+          height={600}
+        />
 
-            {/* <p>
-              High-quality cleaning services, expertly managed and delivered on
-              time, for homes that demand superior standards.
-            </p> */}
-            {/* <div className="hero2-buttonContainer">
-              <a href="">
-                <button className="button1">
-                  Browse Services
-                  <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
-                    <path
-                      clipRule="evenodd"
-                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                      fillRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
+        <div className="lpPaintHeader-cover">
+          <div className="lpPaintHeader-heading">
+            <span className="lpPaintHeader-desktop">
+              <h2>{props.title} </h2>
+              <p>{props.description}</p>
+            </span>
+            <span className="lpPaintHeader-mobile">
+              <h2>{props.mobTitle}</h2>
+              <p>{props.mobDescription}</p>
+            </span>
+            <div className="lpPaintHeader-btn">
+              <Link href="#services">
+                <button>Explore Now</button>
+              </Link>
+              <a href="tel:8792446647">
+                <button>Contact Us</button>
               </a>
-              <a href="">
-                <button>
-                  Contact Us <MdPhone />
-                </button>
-              </a>
-            </div> */}
+            </div>
           </div>
+          <div className="lpPaintHeader-formCard">
+            <div className="lpPaintHeader-formHeader">
+              <h3>Book Expert Advice in Minutes</h3>
+            </div>
+            <form className="lpPaintHeader-form" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name*"
+                required
+              />
 
-          {/* RIGHT FORM */}
-          <div className="hero2-formGlass">
-            <h3>Get Free Expert Advice</h3>
+              <input
+                type="tel"
+                name="Phone No"
+                placeholder="Enter Your Phone No*"
+                required
+              />
 
-            <form>
-              <input type="text" placeholder="Your Name*" required />
-              <input type="tel" placeholder="Phone Number*" required />
-              <input type="text" placeholder="Pincode*" required />
+              <input
+                type="text"
+                name="Pincode"
+                placeholder="Pincode*"
+                required
+              />
 
-              <select required>
-                <option>Select Service</option>
-                <option>Home Painting</option>
-                <option>Apartment Painting</option>
-                <option>Waterproofing</option>
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email Address*"
+                required
+              />
+
+              <select name="Service">
+                <option>Select Your Service</option>
+                <option value="Home Painting">Home Painting</option>
+                <option value="Apartment Painting">Apartment Painting</option>
+                <option value="Spray Painting">Spray Painting</option>
+                <option value="1 Day Express Painting">
+                  1 Day Express Painting
+                </option>
+                <option value="Texture & Designer Wall<">
+                  Texture & Designer Walls
+                </option>
+                <option value="Waterproofing">Waterproofing</option>
               </select>
 
-              <button type="submit">Request Callback</button>
-              <span>No spam • 100% privacy</span>
+              {/* <div className="lpPaintHeader-checkbox">
+                <input type="checkbox" id="whatsapp" defaultChecked />
+                <label htmlFor="whatsapp">Get updates on WhatsApp</label>
+              </div>
+
+              <div className="lpPaintHeader-checkbox">
+                <input type="checkbox" id="terms" required />
+                <label htmlFor="terms">
+                  I Agree To All <span>Terms And Conditions*</span>
+                </label>
+              </div> */}
+
+              <button type="submit" className="lpPaintHeader-submit">
+                Submit
+              </button>
+
+              <div className="lpPaintHeader-checkbox">
+                <label htmlFor="terms">
+                  Your information is safe with us. We respect your privacy and
+                  will only use your details to respond to your inquiry. No
+                  spam, ever.{" "}
+                </label>
+              </div>
             </form>
           </div>
         </div>
       </div>
-
-      {/* TRUST */}
-      <div className="hero2-trust">
-        {content.map((x) => (
-          <div className="hero2-trustItem" key={x.id}>
-            <span className="hero2-trustItemIcon">{x.icon}</span>
-            <p id="services">{x.text}</p>
-          </div>
-        ))}
-        {/* <div className="trust-card">
-          <LuSearchCheck />
-          <b>Site Supervision</b>
+      <div className="lpPaintHeader-wrapper">
+        <div className="lpPaintHeader-itemContent">
+          {content.map((x) => (
+            <div className="lpPaintHeader-item" key={x.id}>
+              <span className="lpPaintHeader-icon">{x.icon}</span>
+              <p>{x.text}</p>
+            </div>
+          ))}
         </div>
-        <div className="trust-card">
-          <GiPaintRoller />
-          <b>Expert Painters</b>
-        </div>
-        <div className="trust-card">
-          <RxTimer />
-          <b>On-Time Delivery</b>
-        </div> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SanityHeroSection
+export default SanityHeroSection;

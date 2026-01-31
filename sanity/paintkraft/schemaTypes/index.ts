@@ -6,6 +6,7 @@ import carouselBlock from './carouselBlock'
 import customTable from './customTable'
 import faqContent from './faqContent'
 import highlightBlock from './highlightBlock'
+import paintShades from './paintShades'
 import post from './post'
 import quoteContent from './quoteContent'
 import seoKeywords from './seoKeywords'
@@ -22,4 +23,5 @@ export const schemaTypes = [
   highlightBlock,
   author,
   seoKeywords,
+  paintShades,
 ]

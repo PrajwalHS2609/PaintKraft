@@ -11,6 +11,7 @@ import {
 import { LuBadgeCheck, LuPaintbrush } from "react-icons/lu";
 import Link from "next/link";
 import Swal from "sweetalert2";
+
 const ServiceHeroSection = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -80,6 +81,8 @@ const ServiceHeroSection = (props) => {
           alt="Paintkraft Banner"
           className="lpPaintHeader-desktopImg"
           priority
+          width={1800}
+          height={600}
         />
 
         <Image
@@ -87,6 +90,8 @@ const ServiceHeroSection = (props) => {
           alt="Paintkraft Mobile Banner"
           className="lpPaintHeader-mobileImg"
           priority
+          width={1800}
+          height={600}
         />
 
         <div className="lpPaintHeader-cover">
