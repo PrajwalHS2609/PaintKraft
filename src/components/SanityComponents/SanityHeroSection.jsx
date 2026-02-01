@@ -107,7 +107,7 @@ const SanityHeroSection = (props) => {
               <Link href="#services">
                 <button>Explore Now</button>
               </Link>
-              <a href="tel:8792446647">
+              <a href="tel:9071274446">
                 <button>Contact Us</button>
               </a>
             </div>

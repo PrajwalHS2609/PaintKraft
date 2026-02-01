@@ -8,6 +8,8 @@ import LpPaintFooter from "../components/PaintLandingPage/LpPaintFooter/LpPaintF
 import "@/components/styles.css"
 import Loader from './../components/Loader/Loader';
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import BangaloreLpNavbar from './../components/BangaloreLp/BangaloreLpNavbar/BangaloreLpNavbar';
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
@@ -18,6 +20,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const isBangloreLanding = pathname.startsWith("/bangalore");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -109,7 +113,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <LpPaintNavbar />
+        {isBangloreLanding ? <BangaloreLpNavbar /> : <LpPaintNavbar />}
         {loading ? <Loader /> : children}
         <LpPaintFooter />
       </body>
