@@ -4,7 +4,7 @@ const WaterproofingTopContent = () => {
   return (
     <div className="contentTop-container">
       <div className="contentTop-wrapper">
-        <h2>Waterproofing Service in Bangalore </h2>
+        <h1>Waterproofing Service in Bangalore </h1>
         <p>
           Waterproofing Service in Bangalore has become an essential requirement
           for homeowners who want to protect their property from water damage,

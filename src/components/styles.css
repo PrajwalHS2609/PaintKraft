@@ -455,6 +455,7 @@
 }
 .contentTop-wrapper > h1 {
   color: var(--lpCustom1);
+  font-size:40px;
 }
 .contentBottom-container {
   /* border: solid red; */

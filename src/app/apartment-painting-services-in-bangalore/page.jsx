@@ -11,6 +11,8 @@ import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSe
 import serviceImg from "@/images/subService.png";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
+import apartmentBanner from "@/images/ServiceBanner/ApartmentPaintingService.png"
+
 export const metadata = {
   title:
     "Apartment Painting Service in Bangalore | Flats Painting Price in Bangalore",
@@ -101,7 +103,7 @@ export default function Apartment() {
       />
       <div>
         <ServiceHeroSection
-          bannerImg={serviceImg}
+          bannerImg={apartmentBanner}
           title="Perfect Paint for Perfect Apartments"
           description="Professional painting services designed to enhance modern apartment living spaces."
         />

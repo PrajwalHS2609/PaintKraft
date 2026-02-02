@@ -4,13 +4,12 @@ import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
 import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSection";
-import serviceImg from "@/images/subService.png";
 import Day1ExpressPaintingBottomContent from "./../../components/Day1ExpressPainting/Day1ExpressPaintingBottomContent";
 import Day1ExpressPaintingTopContent from "../../components/Day1ExpressPainting/Day1ExpressPaintingTopContent";
 import Day1ExpressPaintingFaq from "./../../components/Day1ExpressPainting/Day1ExpressPaintingFaq";
 import Day1ExpressPaintingService from "../../components/Day1ExpressPainting/Day1ExpressPaintingService";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
-import LpPaintServices from "./../../components/PaintLandingPage/LpPaintServices/LpPaintServices";
+import day1ExperssBanner from "@/images/ServiceBanner/1DayExpterssPaintingService.png"
 export const metadata = {
   title:
     "1 Day Express Painting Service in Bangalore | Same Day Painting Price in Bangalore",
@@ -101,7 +100,7 @@ export default function Day1ExpressPainting() {
       />
       <div>
         <ServiceHeroSection
-          bannerImg={serviceImg}
+          bannerImg={day1ExperssBanner}
           title="Painted Today. Enjoy Tomorrow"
           description="Fast professional painting service delivering flawless results within one day"
         />

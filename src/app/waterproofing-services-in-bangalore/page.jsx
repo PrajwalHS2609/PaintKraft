@@ -6,11 +6,10 @@ import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
 import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import PaintContact from "../../components/PaintLandingPage/PaintContact/PaintContact";
-import SprayPaintingFaq from "../../components/SprayPainting/SprayPaintingFaq";
 import WaterproofingTopContent from "../../components/Waterproofing/WaterproofingTopContent";
 import WaterproofingService from "../../components/Waterproofing/WaterproofingService";
 import WaterproofingBottomContent from "../../components/Waterproofing/WaterproofingBottomContent";
-import serviceImg from "@/images/subService.png";
+import waterproofingBanner from "@/images/ServiceBanner/WaterproofingService.png"
 import WaterproofingFaq from "../../components/Waterproofing/WaterproofingFaq";
 
 export const metadata = {
@@ -110,7 +109,7 @@ export default function Waterproofing() {
       />
       <div>
         <ServiceHeroSection
-          bannerImg={serviceImg}
+          bannerImg={waterproofingBanner}
           title="Smart Waterproofing. Lasting Protection"
           description="Advanced waterproofing solutions ensuring long-term protection against leaks and dampness."
         />

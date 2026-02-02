@@ -10,7 +10,7 @@ import CommercialPaintingTopContent from "../../components/CommercialPainting/Co
 import CommercialPaintingService from "../../components/CommercialPainting/CommercialPaintingService";
 import CommercialPaintingFaq from "../../components/CommercialPainting/CommercialPaintingFaq";
 import CommercialPaintingBottomContent from "../../components/CommercialPainting/CommercialPaintingBottomContent";
-import serviceImg from "@/images/subService.png";
+import commercialBanner from "@/images/ServiceBanner/OfficeSpacePaintingServices.png"
 
 export const metadata = {
   title:
@@ -102,7 +102,7 @@ export default function CommercialPage() {
       />
       <div>
         <ServiceHeroSection
-          bannerImg={serviceImg}
+          bannerImg={commercialBanner}
           title="Premium Paint for Productive Spaces"
           description="Professional commercial painting solutions enhancing aesthetics, durability, and workplace productivity. "
         />

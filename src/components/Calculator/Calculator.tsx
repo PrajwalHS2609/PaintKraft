@@ -28,7 +28,7 @@ const Calculator: React.FC = () => {
   };
 
   const calculateCost = () => {
-  if (!spaceType || !projectType || !area) {
+    if (!spaceType || !projectType || !area) {
       setError("Please select painting type and area");
       setCost(null);
       return;
@@ -40,10 +40,32 @@ const Calculator: React.FC = () => {
     // const finalSpace: "interior" | "exterior" =
     //   spaceType === "exterior" ? "exterior" : "interior";
 
-  const ratePerSqft = rates[spaceType][projectType];
-    const total =( Number(area) * ratePerSqft)*2.5;
+    const ratePerSqft = rates[spaceType][projectType];
+    const total = (Number(area) * ratePerSqft) * 2.5;
 
     setCost(total);
+  };
+
+  const interiorServices: Record<ProjectType, string[]> = {
+    economy: [
+      "2 Coat Putty",
+      "1 Coat Primer",
+      "2 Coat Tractor Emulsion",
+      "Basic Cleaning",
+    ],
+    premium: [
+      "2 Coat Putty",
+      "1 Coat Primer",
+      "2 Coat Premium Emulsion",
+      "Basic Cleaning",
+    ],
+    luxury: [
+      "2 Coat Putty",
+      "1 Coat Primer",
+      "2 Coat Royale Luxury Emulsion",
+      "Basic Cleaning",
+    ],
+    "": [],
   };
 
   return (
@@ -123,9 +145,23 @@ const Calculator: React.FC = () => {
 
       {/* RESULT */}
       {cost !== null && (
-        <div className="result">
-          <h2>Estimated Cost: ₹{cost.toLocaleString()}</h2>
-        </div>
+        <>
+          <div className="result">
+            <h2>Estimated Cost: ₹{cost.toLocaleString()}</h2>
+          </div>
+
+          {/* INTERIOR SERVICE DETAILS */}
+          {spaceType === "interior" && projectType && (
+            <div className="service-details">
+              <h4>Service Includes</h4>
+              <ul>
+                {interiorServices[projectType].map((service, index) => (
+                  <li key={index}>{service}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </>
       )}
     </div>
   );

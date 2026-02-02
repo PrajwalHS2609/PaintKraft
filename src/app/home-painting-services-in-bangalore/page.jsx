@@ -7,10 +7,11 @@ import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
 import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSection";
-import serviceImg from "@/images/subService.png";
 import HomePaintingFaq from "../../components/HomePainting/HomePaintingFaq";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
+import homeServiceBanner from "@/images/ServiceBanner/HomePaintingServices.png"
+
 export const metadata = {
   title:
     "Home Painting Service in Bangalore | House Painting Price in Bangalore",
@@ -108,7 +109,7 @@ export default function HomePainting() {
       />
       <div>
         <ServiceHeroSection
-          bannerImg={serviceImg}
+          bannerImg={homeServiceBanner}
           title="Beautiful Homes Start with Great Paint"
           description="Expert painting services that transform your home with flawless finishes"
         />

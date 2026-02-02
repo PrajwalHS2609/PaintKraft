@@ -11,6 +11,7 @@ import TextureDesignBottomContent from "../../components/TextureDesign/TextureDe
 import TextureDesignFaq from './../../components/TextureDesign/TextureDesignFaq';
 import serviceImg from "@/images/subService.png";
 import TextureDesignService from "../../components/TextureDesign/TextureDesignService";
+import textureAndDesignBanner from "@/images/ServiceBanner/Texture&DesignerWallService.png"
 
 export const metadata = {
   title:
@@ -110,7 +111,7 @@ export default function TextureDesignPage() {
       />
       <div>
         <ServiceHeroSection
-          bannerImg={serviceImg}
+          bannerImg={textureAndDesignBanner}
           title="Bold Textures, Beautiful Spaces"
           description="Designer texture walls that add depth, style, and elegance instantly"
         />

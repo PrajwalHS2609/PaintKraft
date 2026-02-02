@@ -8,7 +8,7 @@ import SprayPaintingBottomContent from "../../components/SprayPainting/SprayPain
 import SprayPaintingFaq from "../../components/SprayPainting/SprayPaintingFaq";
 import SprayPaintingService from "../../components/SprayPainting/SprayPaintingService";
 import SprayPaintingTopContent from "../../components/SprayPainting/SprayPaintingTopContent";
-import serviceImg from "@/images/subService.png";
+import sprayBanner from "@/images/ServiceBanner/HomeSprayPaintingService.png"
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 export const metadata = {
@@ -100,7 +100,7 @@ export default function SprayPainting() {
       />
       <div>
         <ServiceHeroSection
-          bannerImg={serviceImg}
+          bannerImg={sprayBanner}
           title="Perfect Finish with Spray Technology"
           description="Advanced spray painting delivering smooth, flawless, and long-lasting professional finishes"
         />
