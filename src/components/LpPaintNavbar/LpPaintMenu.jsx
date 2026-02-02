@@ -48,7 +48,7 @@ const LpPaintMenu = () => {
         </li>
         <li>
           <span className="service-text">
-            Services
+            <Link href={"/services"}> Services</Link>
             <FaChevronDown className="menuDropIcon" />
           </span>
           <div className="menuDropDown">
@@ -195,7 +195,10 @@ const LpPaintMenu = () => {
 
             <li>
               <span>
-                <Link href="/" className={pathname === "/yulu" ? "actives" : ""}>
+                <Link
+                  href="/"
+                  className={pathname === "/yulu" ? "actives" : ""}
+                >
                   Yulu
                 </Link>
               </span>
@@ -212,7 +215,10 @@ const LpPaintMenu = () => {
             <li>
               <span>
                 {" "}
-                <Link href="/" className={pathname === "/nippon" ? "actives" : ""}>
+                <Link
+                  href="/"
+                  className={pathname === "/nippon" ? "actives" : ""}
+                >
                   Nippon
                 </Link>
               </span>
@@ -220,7 +226,10 @@ const LpPaintMenu = () => {
 
             <li>
               <span>
-                <Link href="/" className={pathname === "/berger" ? "actives" : ""}>
+                <Link
+                  href="/"
+                  className={pathname === "/berger" ? "actives" : ""}
+                >
                   Berger
                 </Link>
               </span>
@@ -228,7 +237,10 @@ const LpPaintMenu = () => {
             <li>
               <span>
                 {" "}
-                <Link href="/" className={pathname === "/opus" ? "actives" : ""}>
+                <Link
+                  href="/"
+                  className={pathname === "/opus" ? "actives" : ""}
+                >
                   Opus
                 </Link>
               </span>
@@ -236,7 +248,10 @@ const LpPaintMenu = () => {
 
             <li>
               <span>
-                <Link href="/" className={pathname === "/yulu" ? "actives" : ""}>
+                <Link
+                  href="/"
+                  className={pathname === "/yulu" ? "actives" : ""}
+                >
                   Yulu
                 </Link>
               </span>
@@ -294,7 +309,7 @@ const LpPaintMenu = () => {
             </li>
             <li className="respDropdownList">
               <span>
-                Service
+                <Link href={"/services"}>Service</Link>
                 <FaChevronRight
                   className="menuNavDropIcon"
                   onClick={() => toggleDropdown("service")}

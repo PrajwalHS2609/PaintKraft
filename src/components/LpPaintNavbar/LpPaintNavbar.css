@@ -23,7 +23,6 @@
   object-fit: cover;
 }
 
-
 /* -------------------Menu-------------------- */
 .menuContainer {
   /* border: solid blue; */
@@ -77,7 +76,7 @@
 .menuDropDown > li > span {
   width: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -156,7 +155,7 @@
   text-align: start;
   display: flex;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
 }
 .menuDropIcon {
   font-size: 15px;
@@ -165,6 +164,10 @@
 .service-text {
   font-size: 17px;
   font-weight: 500;
+}
+.service-text > a {
+  color: black;
+  text-decoration: none;
 }
 .innerMenuDropDown {
   /* border: solid green; */
@@ -378,6 +381,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.respDropdownList > span > a {
+  color:black;
+  text-decoration: none;
+    font-weight: 500;
+
 }
 .respMenu.show {
   transform: translateX(0);
@@ -848,7 +857,7 @@
     font-size: 40px;
     color: #25d366;
   }
-    .menuContainerList {
+  .menuContainerList {
     display: none;
   }
   .respMenuBar {

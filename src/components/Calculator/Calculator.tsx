@@ -2,76 +2,111 @@
 import React, { useState } from "react";
 import "./Calculator.css";
 
-const Calculator = () => {
-  const [projectType, setProjectType] = useState("");
-  const [spaceType, setSpaceType] = useState("");
-  const [area, setArea] = useState("");
+type ProjectType = "economy" | "premium" | "luxury" | "";
+type SpaceType = "interior" | "exterior" | "";
+
+const Calculator: React.FC = () => {
+  const [projectType, setProjectType] = useState<ProjectType>("");
+  const [spaceType, setSpaceType] = useState<SpaceType>(""); // optional
+  const [area, setArea] = useState<string>("");
   const [cost, setCost] = useState<number | null>(null);
+  const [error, setError] = useState<string>("");
+
+  const rates: Record<"interior" | "exterior", Record<ProjectType, number>> = {
+    interior: {
+      economy: 17.5,
+      premium: 21,
+      luxury: 22,
+      "": 0,
+    },
+    exterior: {
+      economy: 13,
+      premium: 16,
+      luxury: 22,
+      "": 0,
+    },
+  };
 
   const calculateCost = () => {
-    if (!projectType || !spaceType || !area) {
-      alert("Please fill all fields");
+  if (!spaceType || !projectType || !area) {
+      setError("Please select painting type and area");
+      setCost(null);
       return;
     }
 
-    let ratePerSqft = 0;
+    setError("");
 
-    // base rates (example)
-    if (projectType === "fresh" && spaceType === "interior") ratePerSqft = 20;
-    if (projectType === "fresh" && spaceType === "exterior") ratePerSqft = 25;
-    if (projectType === "repaint" && spaceType === "interior") ratePerSqft = 15;
-    if (projectType === "repaint" && spaceType === "exterior") ratePerSqft = 18;
+    // default to interior if not selected
+    // const finalSpace: "interior" | "exterior" =
+    //   spaceType === "exterior" ? "exterior" : "interior";
 
-    const total = Number(area) * ratePerSqft;
+  const ratePerSqft = rates[spaceType][projectType];
+    const total =( Number(area) * ratePerSqft)*2.5;
+
     setCost(total);
   };
 
   return (
     <div className="calculator-container">
-      <h3>Select your type of project *</h3>
-      <div className="radio-group">
-        <label>
-          <input
-            type="radio"
-            name="project"
-            value="fresh"
-            onChange={(e) => setProjectType(e.target.value)}
-          />
-          Fresh Painting
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="project"
-            value="repaint"
-            onChange={(e) => setProjectType(e.target.value)}
-          />
-          Repainting
-        </label>
-      </div>
-
-      <h3>Select the space *</h3>
+      {/* SPACE */}
+      <h3>Select Area *</h3>
       <div className="radio-group">
         <label>
           <input
             type="radio"
             name="space"
-            value="interior"
-            onChange={(e) => setSpaceType(e.target.value)}
+            checked={spaceType === "interior"}
+            onChange={() => setSpaceType("interior")}
           />
-          Interior
+          <span>Interior</span>
         </label>
+
         <label>
           <input
             type="radio"
             name="space"
-            value="exterior"
-            onChange={(e) => setSpaceType(e.target.value)}
+            checked={spaceType === "exterior"}
+            onChange={() => setSpaceType("exterior")}
           />
-          Exterior
+          <span>Exterior</span>
         </label>
       </div>
 
+      {/* PROJECT */}
+      <h3>Select Painting Type *</h3>
+      <div className="radio-group">
+        <label>
+          <input
+            type="radio"
+            name="project"
+            checked={projectType === "economy"}
+            onChange={() => setProjectType("economy")}
+          />
+          <span>Economy Painting</span>
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="project"
+            checked={projectType === "premium"}
+            onChange={() => setProjectType("premium")}
+          />
+          <span>Premium Painting</span>
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="project"
+            checked={projectType === "luxury"}
+            onChange={() => setProjectType("luxury")}
+          />
+          <span>Luxury Painting</span>
+        </label>
+      </div>
+
+      {/* AREA */}
       <h3>Enter carpet area in SQFT *</h3>
       <input
         type="number"
@@ -80,10 +115,13 @@ const Calculator = () => {
         onChange={(e) => setArea(e.target.value)}
       />
 
-      <button onClick={calculateCost}>
-        Calculate now →
-      </button>
+      {/* ERROR */}
+      {error && <p className="error-text">{error}</p>}
 
+      {/* BUTTON */}
+      <button onClick={calculateCost}>Calculate now →</button>
+
+      {/* RESULT */}
       {cost !== null && (
         <div className="result">
           <h2>Estimated Cost: ₹{cost.toLocaleString()}</h2>
