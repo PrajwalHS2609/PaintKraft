@@ -11,6 +11,7 @@ import SprayPaintingTopContent from "../../components/SprayPainting/SprayPaintin
 import sprayBanner from "@/images/ServiceBanner/HomeSprayPaintingService.png"
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 export const metadata = {
   title:
     "Spray Painting Service in Bangalore | House Painting Price in Bangalore",
@@ -107,6 +108,7 @@ export default function SprayPainting() {
         <SprayPaintingTopContent />
         <LpPaintPartner />
         <SprayPaintingService />
+        <HomeWorkWith/>
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />

@@ -11,6 +11,7 @@ import CommercialPaintingService from "../../components/CommercialPainting/Comme
 import CommercialPaintingFaq from "../../components/CommercialPainting/CommercialPaintingFaq";
 import CommercialPaintingBottomContent from "../../components/CommercialPainting/CommercialPaintingBottomContent";
 import commercialBanner from "@/images/ServiceBanner/OfficeSpacePaintingServices.png"
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
   title:
@@ -109,6 +110,7 @@ export default function CommercialPage() {
         <CommercialPaintingTopContent />
         <LpPaintPartner />
         <CommercialPaintingService />
+        <HomeWorkWith/>
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />

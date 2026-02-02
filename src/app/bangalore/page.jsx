@@ -5,6 +5,7 @@ import LpPaintTestimonial from "@/components/PaintLandingPage/LpPaintTestimonial
 import LpPaintWhy from "@/components/PaintLandingPage/LpPaintWhy/LpPaintWhy";
 import PaintContact from "@/components/PaintLandingPage/PaintContact/PaintContact";
 import BangaloreLpService from './../../components/BangaloreLp/BangaloreLpService';
+import HomeWorkWith from "@/components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export default function BangaloreLp() {
   return (
@@ -12,6 +13,7 @@ export default function BangaloreLp() {
       <LpPaintHeader />
       <LpPaintPartner />
       <BangaloreLpService/>
+      <HomeWorkWith/>
       <LpPaintWhy />
       <LpPaintTestimonial />
       <PaintContact />

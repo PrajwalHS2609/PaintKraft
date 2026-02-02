@@ -11,6 +11,7 @@ import WaterproofingService from "../../components/Waterproofing/WaterproofingSe
 import WaterproofingBottomContent from "../../components/Waterproofing/WaterproofingBottomContent";
 import waterproofingBanner from "@/images/ServiceBanner/WaterproofingService.png"
 import WaterproofingFaq from "../../components/Waterproofing/WaterproofingFaq";
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
   title:
@@ -116,6 +117,7 @@ export default function Waterproofing() {
         <WaterproofingTopContent />
         <LpPaintPartner />
         <WaterproofingService />
+        <HomeWorkWith/>
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />

@@ -5,14 +5,15 @@ import LpCoimbatoreFaq from "../../components/LpCoimbatorePage/LpCoimbatoreFaq";
 import LpCoimbatorePartner from "../../components/LpCoimbatorePage/LpCoimbatorePartner";
 import LpCoimbatoreTestimonial from "../../components/LpCoimbatorePage/LpCoimbatoreTestimonial";
 import LpCoimbatoreService from "../../components/LpCoimbatorePage/LpCoimbatoreService";
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 export default function CoimbatorePage() {
   return (
     <div>
       <LpPaintHeader />
       <LpCoimbatorePartner />
       <LpCoimbatoreService />
-      {/* <LpPaintBeforeAfter/> */}
-      <LpPaintWhy />
+      <HomeWorkWith />
+       <LpPaintWhy />
       <LpCoimbatoreTestimonial />
       {/* <LpPaintSteps /> */}
       <PaintContact />

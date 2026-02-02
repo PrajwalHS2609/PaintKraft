@@ -6,6 +6,7 @@ import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import bannerImg from "@/images/LpBannerImg.png";
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 // import mobileBannerImg from "@/images/lpMobileBannerImg.jpg";
 export default function ServicePage() {
   return (
@@ -17,6 +18,7 @@ export default function ServicePage() {
       />
       <LpPaintPartner />
       <LpPaintServices />
+      <HomeWorkWith/>
       <ServiceCal />
       <ServiceKey />
       <LpPaintTestimonial />

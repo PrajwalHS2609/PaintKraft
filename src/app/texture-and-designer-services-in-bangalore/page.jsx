@@ -12,6 +12,7 @@ import TextureDesignFaq from './../../components/TextureDesign/TextureDesignFaq'
 import serviceImg from "@/images/subService.png";
 import TextureDesignService from "../../components/TextureDesign/TextureDesignService";
 import textureAndDesignBanner from "@/images/ServiceBanner/Texture&DesignerWallService.png"
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
   title:
@@ -117,6 +118,7 @@ export default function TextureDesignPage() {
         />
         <TextureDesignTopContent />
         <TextureDesignService/>
+        <HomeWorkWith/>
         <LpPaintPartner />
         <ServiceCal />
         <ServiceKey />

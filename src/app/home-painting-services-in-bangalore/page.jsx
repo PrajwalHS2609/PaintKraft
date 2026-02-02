@@ -11,6 +11,7 @@ import HomePaintingFaq from "../../components/HomePainting/HomePaintingFaq";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import homeServiceBanner from "@/images/ServiceBanner/HomePaintingServices.png"
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
   title:
@@ -116,6 +117,7 @@ export default function HomePainting() {
         <HomePaintingTopContent />
         <LpPaintPartner />
         <HomePaintingService />
+        <HomeWorkWith/>
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />

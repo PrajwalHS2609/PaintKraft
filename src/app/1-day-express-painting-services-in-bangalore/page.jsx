@@ -10,6 +10,7 @@ import Day1ExpressPaintingFaq from "./../../components/Day1ExpressPainting/Day1E
 import Day1ExpressPaintingService from "../../components/Day1ExpressPainting/Day1ExpressPaintingService";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import day1ExperssBanner from "@/images/ServiceBanner/1DayExpterssPaintingService.png"
+import HomeWorkWith from './../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith';
 export const metadata = {
   title:
     "1 Day Express Painting Service in Bangalore | Same Day Painting Price in Bangalore",
@@ -106,6 +107,7 @@ export default function Day1ExpressPainting() {
         />
         <Day1ExpressPaintingTopContent />
         <Day1ExpressPaintingService />
+        <HomeWorkWith/>
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />

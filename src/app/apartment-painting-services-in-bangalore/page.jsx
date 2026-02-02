@@ -12,6 +12,7 @@ import serviceImg from "@/images/subService.png";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import apartmentBanner from "@/images/ServiceBanner/ApartmentPaintingService.png"
+import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
   title:
@@ -110,6 +111,7 @@ export default function Apartment() {
         <ApartmentPaintingTopContent />
         <LpPaintPartner />
         <ApartmentService />
+        <HomeWorkWith/>
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />
