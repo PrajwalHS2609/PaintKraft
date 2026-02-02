@@ -22,6 +22,8 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
   const isBangloreLanding = pathname.startsWith("/bangalore");
+  const isCoimbatoreLanding = pathname.startsWith("/coimbatore");
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -113,7 +115,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {isBangloreLanding ? <BangaloreLpNavbar /> : <LpPaintNavbar />}
+        {isBangloreLanding ? (<BangaloreLpNavbar />) : isCoimbatoreLanding ? (<BangaloreLpNavbar />) : <LpPaintNavbar />}
         {loading ? <Loader /> : children}
         <LpPaintFooter />
       </body>
