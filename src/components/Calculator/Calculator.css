@@ -157,3 +157,19 @@
   color: #fbbc04;
   font-weight: bold;
 }
+@media screen and (max-width:768px) {
+  .calculator-container {
+  width: 500px;
+  padding: 35px;
+  border-radius: 18px;
+  background-color: #1c1c1c;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.05)
+  );
+  color: white;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
+  transform: scale(0.64);
+}
+}
