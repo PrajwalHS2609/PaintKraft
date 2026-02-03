@@ -4,72 +4,144 @@ import "./Calculator.css";
 
 type ProjectType = "economy" | "premium" | "luxury" | "";
 type SpaceType = "interior" | "exterior" | "";
+type PaintMode = "fresh" | "repaint" | "";
 
 const Calculator: React.FC = () => {
+  const [paintMode, setPaintMode] = useState<PaintMode>("");
+  const [spaceType, setSpaceType] = useState<SpaceType>("");
   const [projectType, setProjectType] = useState<ProjectType>("");
-  const [spaceType, setSpaceType] = useState<SpaceType>(""); // optional
   const [area, setArea] = useState<string>("");
   const [cost, setCost] = useState<number | null>(null);
   const [error, setError] = useState<string>("");
 
-  const rates: Record<"interior" | "exterior", Record<ProjectType, number>> = {
-    interior: {
-      economy: 17.5,
-      premium: 21,
-      luxury: 22,
-      "": 0,
+  /* ================= RATES ================= */
+
+  const rates: Record<
+    PaintMode,
+    Record<"interior" | "exterior", Record<ProjectType, number>>
+  > = {
+    fresh: {
+      interior: {
+        economy: 17.50,
+        premium: 21,
+        luxury: 27,
+        "": 0,
+      },
+      exterior: {
+        economy: 13,
+        premium: 16,
+        luxury: 22,
+        "": 0,
+      },
     },
-    exterior: {
-      economy: 13,
-      premium: 16,
-      luxury: 22,
-      "": 0,
+    repaint: {
+      interior: {
+        economy: 10,
+        premium: 13,
+        luxury: 18,
+        "": 0,
+      },
+      exterior: {
+        economy: 13,
+        premium: 16,
+        luxury: 22,
+        "": 0,
+      },
+    },
+    "": {
+      interior: { economy: 0, premium: 0, luxury: 0, "": 0 },
+      exterior: { economy: 0, premium: 0, luxury: 0, "": 0 },
     },
   };
 
+  /* ============== SERVICES (INTERIOR ONLY) ============== */
+
+  const interiorServices: Record<PaintMode, Record<ProjectType, string[]>> = {
+    fresh: {
+      economy: [
+        "2 Coat Putty",
+        "1 Coat Primer",
+        "2 Coat Tractor Emulsion",
+        "Basic Cleaning",
+      ],
+      premium: [
+        "2 Coat Putty",
+        "1 Coat Primer",
+        "2 Coat Premium Emulsion",
+        "Basic Cleaning",
+      ],
+      luxury: [
+        "2 Coat Putty",
+        "1 Coat Primer",
+        "2 Coat Royale Luxury Emulsion",
+        "Basic Cleaning",
+      ],
+      "": [],
+    },
+    repaint: {
+      economy: [
+        "Touch up Putty",
+        "2 Coat Paint",
+      ],
+      premium: [
+        "Touch up Putty",
+        "2 Coat Paint",
+        "1 Coat Primer",
+
+      ],
+      luxury: [
+        "Touch up Putty",
+        "2 Coat Paint",
+        "1 Coat Primer",
+      ],
+      "": [],
+    },
+    "": { economy: [], premium: [], luxury: [], "": [] },
+  };
+
+  /* ================= CALCULATION ================= */
+
   const calculateCost = () => {
-    if (!spaceType || !projectType || !area) {
-      setError("Please select painting type and area");
+    if (!paintMode || !spaceType || !projectType || !area) {
+      setError("Please select painting mode, area type, package and enter area");
       setCost(null);
       return;
     }
 
     setError("");
 
-    // default to interior if not selected
-    // const finalSpace: "interior" | "exterior" =
-    //   spaceType === "exterior" ? "exterior" : "interior";
-
-    const ratePerSqft = rates[spaceType][projectType];
-    const total = (Number(area) * ratePerSqft) * 2.5;
+    const ratePerSqft = rates[paintMode][spaceType][projectType];
+    const total = Number(area) * ratePerSqft * 2.5;
 
     setCost(total);
   };
 
-  const interiorServices: Record<ProjectType, string[]> = {
-    economy: [
-      "2 Coat Putty",
-      "1 Coat Primer",
-      "2 Coat Tractor Emulsion",
-      "Basic Cleaning",
-    ],
-    premium: [
-      "2 Coat Putty",
-      "1 Coat Primer",
-      "2 Coat Premium Emulsion",
-      "Basic Cleaning",
-    ],
-    luxury: [
-      "2 Coat Putty",
-      "1 Coat Primer",
-      "2 Coat Royale Luxury Emulsion",
-      "Basic Cleaning",
-    ],
-    "": [],
-  };
-
   return (
     <div className="calculator-container">
+      {/* PAINT MODE */}
+      <h3>Select Painting Type *</h3>
+      <div className="radio-group">
+        <label>
+          <input
+            type="radio"
+            name="mode"
+            checked={paintMode === "fresh"}
+            onChange={() => setPaintMode("fresh")}
+          />
+          <span>Fresh Painting</span>
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="mode"
+            checked={paintMode === "repaint"}
+            onChange={() => setPaintMode("repaint")}
+          />
+          <span>Repainting</span>
+        </label>
+      </div>
+
       {/* SPACE */}
       <h3>Select Area *</h3>
       <div className="radio-group">
@@ -95,7 +167,7 @@ const Calculator: React.FC = () => {
       </div>
 
       {/* PROJECT */}
-      <h3>Select Painting Type *</h3>
+      <h3>Select Package *</h3>
       <div className="radio-group">
         <label>
           <input
@@ -104,7 +176,7 @@ const Calculator: React.FC = () => {
             checked={projectType === "economy"}
             onChange={() => setProjectType("economy")}
           />
-          <span>Economy Painting</span>
+          <span>Economy</span>
         </label>
 
         <label>
@@ -114,7 +186,7 @@ const Calculator: React.FC = () => {
             checked={projectType === "premium"}
             onChange={() => setProjectType("premium")}
           />
-          <span>Premium Painting</span>
+          <span>Premium</span>
         </label>
 
         <label>
@@ -124,7 +196,7 @@ const Calculator: React.FC = () => {
             checked={projectType === "luxury"}
             onChange={() => setProjectType("luxury")}
           />
-          <span>Luxury Painting</span>
+          <span>Luxury</span>
         </label>
       </div>
 
@@ -137,10 +209,8 @@ const Calculator: React.FC = () => {
         onChange={(e) => setArea(e.target.value)}
       />
 
-      {/* ERROR */}
       {error && <p className="error-text">{error}</p>}
 
-      {/* BUTTON */}
       <button onClick={calculateCost}>Calculate now →</button>
 
       {/* RESULT */}
@@ -150,14 +220,16 @@ const Calculator: React.FC = () => {
             <h2>Estimated Cost: ₹{cost.toLocaleString()}</h2>
           </div>
 
-          {/* INTERIOR SERVICE DETAILS */}
+          {/* SERVICES – ONLY FOR INTERIOR */}
           {spaceType === "interior" && projectType && (
             <div className="service-details">
               <h4>Service Includes</h4>
               <ul>
-                {interiorServices[projectType].map((service, index) => (
-                  <li key={index}>{service}</li>
-                ))}
+                {interiorServices[paintMode][projectType].map(
+                  (service, index) => (
+                    <li key={index}>{service}</li>
+                  )
+                )}
               </ul>
             </div>
           )}
