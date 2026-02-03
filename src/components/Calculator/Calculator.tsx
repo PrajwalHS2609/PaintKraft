@@ -233,8 +233,14 @@ const Calculator: React.FC = () => {
               </ul>
             </div>
           )}
+
         </>
       )}
+      <div className="service-details2">
+        <p>Contact Us : <a href="tel:7090234446">7090234446</a>
+        </p>
+        <p>1-Hr Home Visit or Get 10% Off</p>
+      </div>
     </div>
   );
 };
