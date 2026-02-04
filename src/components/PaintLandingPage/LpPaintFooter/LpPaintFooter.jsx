@@ -40,6 +40,9 @@ const LpPaintFooter = () => {
               <a href="tel:9071274446">9071274446</a>
             </p>
             <p>
+              <a href="tel:8792446647">8792446647</a>
+            </p>
+            <p>
               <a href="tel:7090234446">7090234446</a>
             </p>
           </div>
@@ -76,7 +79,10 @@ const LpPaintFooter = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/paintkraft.in/" target="_blank">
+              <a
+                href="https://www.instagram.com/paintkraft.in/"
+                target="_blank"
+              >
                 <FaInstagram className="lpPaintFooter-socialIco" />
               </a>
             </li>
