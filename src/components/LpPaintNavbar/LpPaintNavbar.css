@@ -383,10 +383,9 @@
   flex-direction: column;
 }
 .respDropdownList > span > a {
-  color:black;
+  color: black;
   text-decoration: none;
-    font-weight: 500;
-
+  font-weight: 500;
 }
 .respMenu.show {
   transform: translateX(0);
@@ -837,6 +836,9 @@
   font-size: 40px;
   color: #25d366;
 }
+#lpPaintTop-icon2 {
+  color: rgb(93, 93, 250);
+}
 @media screen and (max-width: 768px) {
   .lpPaintTop-content:nth-child(1) {
     display: none;
@@ -851,12 +853,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
   }
   .lpPaintTop-icon {
     margin-right: 0px;
-    font-size: 40px;
-    color: #25d366;
+    font-size: 30px;
   }
+
   .menuContainerList {
     display: none;
   }
