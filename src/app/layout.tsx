@@ -39,7 +39,7 @@ export default function RootLayout({
       <head>
         {/* Favicon */}
         <link rel="icon" type="image/png" href="/favicon.png" />
-
+        <meta name="google-site-verification" content="ZVxDXZr32eYpcihSeZkw-88QMI4vcHbaGqcrS79kPKA" />
         {/* ================= GOOGLE ADS BASE TAG (REQUIRED) ================= */}
         <script
           async
