@@ -99,7 +99,7 @@ const LpPaintFooter = () => {
           ></iframe>
         </div>
       </div>
-      {/* <p>© Copyright 2025 primecleanCo.in</p> */}
+      <p>© Copyright 2025 paintkraft.in | <a href="/sitemap.xml">Sitemap</a></p>
     </footer>
   );
 };

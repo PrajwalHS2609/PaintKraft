@@ -185,7 +185,7 @@ const LpPaintMenu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/"
+                  href="/opus"
                   className={pathname === "/opus" ? "actives" : ""}
                 >
                   Opus
@@ -238,7 +238,7 @@ const LpPaintMenu = () => {
               <span>
                 {" "}
                 <Link
-                  href="/"
+                  href="/opus"
                   className={pathname === "/opus" ? "actives" : ""}
                 >
                   Opus
@@ -485,8 +485,8 @@ const LpPaintMenu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/opus0`}
-                        className={pathname === "/opus0" ? "active" : ""}
+                        href={`/opus`}
+                        className={pathname === "/opus" ? "active" : ""}
                       >
                         Opus
                       </Link>
@@ -552,8 +552,8 @@ const LpPaintMenu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/opus0`}
-                        className={pathname === "/opus0" ? "active" : ""}
+                        href={`/opus`}
+                        className={pathname === "/opus" ? "active" : ""}
                       >
                         Opus
                       </Link>
