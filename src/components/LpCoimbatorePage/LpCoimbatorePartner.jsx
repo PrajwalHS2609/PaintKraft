@@ -1,8 +1,8 @@
 import React from "react";
-import nippon from "@/images/nippon.png";
-import berger from "@/images/berger.png";
-import opus from "@/images/opus.png";
-import yulu from "@/images/yulu.png";
+import nippon from "@/images/partner/nippon.png";
+import berger from "@/images/partner/berger.png";
+import opus from "@/images/partner/opus.png";
+import asian from "@/images/partner/asian.png";
 import Image from "next/image";
 import "./../PaintLandingPage/LpPaintPartner/LpPaintPartner.css"
 const LpCoimbatorePartner = () => {
@@ -28,7 +28,7 @@ const LpCoimbatorePartner = () => {
           <Image src={opus} alt="opus" />
         </div>
         <div className="lpPaintPartner-item">
-          <Image src={yulu} alt="yulu" />
+          <Image src={asian} alt="asian" />
         </div>
       </div>
       <span id="services"></span>
