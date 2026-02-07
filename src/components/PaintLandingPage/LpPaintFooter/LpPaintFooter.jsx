@@ -1,6 +1,6 @@
 import React from "react";
 import "./LpPaintFooter.css";
-import { FaFacebook, FaInstagram } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 import Link from "next/link";
 
 const LpPaintFooter = () => {
@@ -86,6 +86,14 @@ const LpPaintFooter = () => {
                 <FaInstagram className="lpPaintFooter-socialIco" />
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@PaintKraft"
+                target="_blank"
+              >
+                <FaYoutube className="lpPaintFooter-socialIco" />
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -99,7 +107,9 @@ const LpPaintFooter = () => {
           ></iframe>
         </div>
       </div>
-      <p>© Copyright 2025 paintkraft.in | <a href="/sitemap.xml">Sitemap</a></p>
+      <p>
+        © Copyright 2025 paintkraft.in | <a href="/sitemap.xml">Sitemap</a>
+      </p>
     </footer>
   );
 };
