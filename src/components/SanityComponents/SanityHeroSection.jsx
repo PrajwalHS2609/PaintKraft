@@ -100,8 +100,8 @@ const SanityHeroSection = (props) => {
               <p>{props.description}</p>
             </span>
             <span className="lpPaintHeader-mobile">
-              <h2>{props.mobTitle}</h2>
-              <p>{props.mobDescription}</p>
+              <h2>{props.title}</h2>
+              <p>{props.description}</p>
             </span>
             <div className="lpPaintHeader-btn">
               <Link href="#services">

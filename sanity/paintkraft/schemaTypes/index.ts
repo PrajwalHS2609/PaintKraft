@@ -10,6 +10,7 @@ import paintShades from './paintShades'
 import post from './post'
 import quoteContent from './quoteContent'
 import seoKeywords from './seoKeywords'
+import serviceContents from './serviceContents'
 
 export const schemaTypes = [
   post,
@@ -24,4 +25,5 @@ export const schemaTypes = [
   author,
   seoKeywords,
   paintShades,
+  serviceContents
 ]
