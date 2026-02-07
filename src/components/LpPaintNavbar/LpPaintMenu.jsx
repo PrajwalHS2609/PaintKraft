@@ -196,10 +196,10 @@ const LpPaintMenu = () => {
             <li>
               <span>
                 <Link
-                  href="/"
-                  className={pathname === "/yulu" ? "actives" : ""}
+                  href="/asian-paints"
+                  className={pathname === "/asian-paints" ? "actives" : ""}
                 >
-                  Yulu
+                  Asian Paints
                 </Link>
               </span>
             </li>
@@ -249,10 +249,10 @@ const LpPaintMenu = () => {
             <li>
               <span>
                 <Link
-                  href="/"
-                  className={pathname === "/yulu" ? "actives" : ""}
+                  href="/asian-paints"
+                  className={pathname === "/asian-paints" ? "actives" : ""}
                 >
-                  Yulu
+                  Asian Paints
                 </Link>
               </span>
             </li>
@@ -499,10 +499,10 @@ const LpPaintMenu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/yulu`}
-                        className={pathname === "/yulu" ? "active" : ""}
+                        href={`/asian-paints`}
+                        className={pathname === "/asian-paints" ? "active" : ""}
                       >
-                        Yulu
+                        Asian Paints
                       </Link>
                     </span>
                   </li>
@@ -566,10 +566,10 @@ const LpPaintMenu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/yulu`}
-                        className={pathname === "/yulu" ? "active" : ""}
+                        href={`/asian-paints`}
+                        className={pathname === "/asian-paints" ? "active" : ""}
                       >
-                        Yulu
+                        Asian Paints
                       </Link>
                     </span>
                   </li>
