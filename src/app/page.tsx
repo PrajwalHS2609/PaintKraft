@@ -18,21 +18,20 @@ export const metadata = {
 
 };
 export default function LpPaint() {
-  
+
   return (
     <div>
       <LpPaintHeader />
       <LpPaintPartner />
       <LpPaintServices />
-            <HomeWorkWith/>
+      <HomeWorkWith />
       <ServiceCal />
       <LpPaintWhy />
       <LpPaintTestimonial />
-      {/* <LpPaintSteps /> */}
       <PaintContact />
       <LpPaintFaq />
-            <HomeBlog/>
-      <HomeKeywords/>
+      <HomeBlog />
+      <HomeKeywords />
     </div>
   );
 }

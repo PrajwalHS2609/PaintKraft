@@ -30,19 +30,23 @@ const POST_QUERY = `{
 
 const SERVICE_CONTENT_QUERY = `{
   "service": *[_type == "ServiceCategory" && slug.current == $slug][0]{
-    _id, title, slug,metaTitle ,metaDescription,body1, body2,
+    _id, title,description, slug,metaTitle ,metaDescription,body1, body2,
     mainImage{ asset->{url} },
     youtubeVideoUrl,
     faq[]{ question, answer },
    tableOfContent[]{
       title
     },
-    customTable{ title, headers, rows[]{ cells } }
+    customTable{ title, headers, rows[]{ cells } },
+        seoKeywords{
+    keywords
+  },
   },
   "carouselBlock": *[_type == "carouselBlock"][0]{
     title,
     images[]{ alt, caption, link, asset->{ url } }
   },
+
 
 }`;
 
@@ -212,7 +216,7 @@ export default async function SlugPage({
   if (paintShadesData) {
     return <SanityColorShade data={paintShadesData} />;
   }
-// ✅ FINAL FALLBACK
-notFound();
+  // ✅ FINAL FALLBACK
+  notFound();
 }
 
