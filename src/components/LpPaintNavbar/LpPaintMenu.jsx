@@ -196,8 +196,8 @@ const LpPaintMenu = () => {
             <li>
               <span>
                 <Link
-                  href="/asian-paints"
-                  className={pathname === "/asian-paints" ? "actives" : ""}
+                  href="/"
+                  className={pathname === "/" ? "actives" : ""}
                 >
                   Asian Paints
                 </Link>
@@ -249,8 +249,8 @@ const LpPaintMenu = () => {
             <li>
               <span>
                 <Link
-                  href="/asian-paints"
-                  className={pathname === "/asian-paints" ? "actives" : ""}
+                  href="/"
+                  className={pathname === "/" ? "actives" : ""}
                 >
                   Asian Paints
                 </Link>
@@ -499,8 +499,8 @@ const LpPaintMenu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/asian-paints`}
-                        className={pathname === "/asian-paints" ? "active" : ""}
+                        href={`/`}
+                        className={pathname === "/" ? "active" : ""}
                       >
                         Asian Paints
                       </Link>
@@ -566,8 +566,8 @@ const LpPaintMenu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/asian-paints`}
-                        className={pathname === "/asian-paints" ? "active" : ""}
+                        href={`/`}
+                        className={pathname === "/" ? "active" : ""}
                       >
                         Asian Paints
                       </Link>
