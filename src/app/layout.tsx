@@ -10,6 +10,7 @@ import Loader from './../components/Loader/Loader';
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import BangaloreLpNavbar from './../components/BangaloreLp/BangaloreLpNavbar/BangaloreLpNavbar';
+import Script  from 'next/script';
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
@@ -104,6 +105,19 @@ export default function RootLayout({
           }}
         ></script>
 
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17441114317"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-ads">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17441114317');
+          `}
+        </Script>
       </head>
 
       <body className={montserrat.className}>
