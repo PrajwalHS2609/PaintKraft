@@ -113,6 +113,8 @@ export default function Waterproofing() {
           bannerImg={waterproofingBanner}
           title="Smart Waterproofing. Lasting Protection"
           description="Advanced waterproofing solutions ensuring long-term protection against leaks and dampness."
+          mobTitle="Smart Waterproofing. Lasting Protection"
+          mobDescription="Advanced waterproofing solutions ensuring long-term protection against leaks and dampness."
         />
         <WaterproofingTopContent />
         <LpPaintPartner />

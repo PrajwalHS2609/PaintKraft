@@ -104,7 +104,10 @@ export default function SprayPainting() {
           bannerImg={sprayBanner}
           title="Perfect Finish with Spray Technology"
           description="Advanced spray painting delivering smooth, flawless, and long-lasting professional finishes"
-        />
+        mobTitle="Perfect Finish with Spray Technology"
+         mobDescription="Advanced spray painting delivering smooth, flawless, and long-lasting professional finishes"
+       
+       />
         <SprayPaintingTopContent />
         <LpPaintPartner />
         <SprayPaintingService />

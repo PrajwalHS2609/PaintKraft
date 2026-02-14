@@ -8,10 +8,10 @@ import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimo
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import PaintContact from "../../components/PaintLandingPage/PaintContact/PaintContact";
 import TextureDesignBottomContent from "../../components/TextureDesign/TextureDesignBottomContent";
-import TextureDesignFaq from './../../components/TextureDesign/TextureDesignFaq';
+import TextureDesignFaq from "./../../components/TextureDesign/TextureDesignFaq";
 import serviceImg from "@/images/subService.png";
 import TextureDesignService from "../../components/TextureDesign/TextureDesignService";
-import textureAndDesignBanner from "@/images/ServiceBanner/Texture&DesignerWallService.png"
+import textureAndDesignBanner from "@/images/ServiceBanner/Texture&DesignerWallService.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
@@ -115,10 +115,12 @@ export default function TextureDesignPage() {
           bannerImg={textureAndDesignBanner}
           title="Bold Textures, Beautiful Spaces"
           description="Designer texture walls that add depth, style, and elegance instantly"
+          mobTitle="Bold Textures, Beautiful Spaces"
+          mobDescription="Designer texture walls that add depth, style, and elegance instantly"
         />
         <TextureDesignTopContent />
-        <TextureDesignService/>
-        <HomeWorkWith/>
+        <TextureDesignService />
+        <HomeWorkWith />
         <LpPaintPartner />
         <ServiceCal />
         <ServiceKey />

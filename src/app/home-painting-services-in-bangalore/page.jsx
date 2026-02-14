@@ -10,7 +10,7 @@ import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSe
 import HomePaintingFaq from "../../components/HomePainting/HomePaintingFaq";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
-import homeServiceBanner from "@/images/ServiceBanner/HomePaintingServices.png"
+import homeServiceBanner from "@/images/ServiceBanner/HomePaintingServices.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
@@ -113,11 +113,13 @@ export default function HomePainting() {
           bannerImg={homeServiceBanner}
           title="Beautiful Homes Start with Great Paint"
           description="Expert painting services that transform your home with flawless finishes"
+          mobTitle="Beautiful Homes Start with Great Paint"
+          mobDescription="Expert painting services that transform your home with flawless finishes"
         />
         <HomePaintingTopContent />
         <LpPaintPartner />
         <HomePaintingService />
-        <HomeWorkWith/>
+        <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />

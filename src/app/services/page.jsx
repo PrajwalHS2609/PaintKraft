@@ -15,10 +15,12 @@ export default function ServicePage() {
         bannerImg={bannerImg}
         title="No Body Does Spray Painting Like Us!"
         description="Seamless finish, Flawless shine. The PaintKraft spray painting difference."
+        mobTitle="No Body Does Spray Painting Like Us!"
+        mobDescription="Seamless finish, Flawless shine. The PaintKraft spray painting difference."
       />
       <LpPaintPartner />
       <LpPaintServices />
-      <HomeWorkWith/>
+      <HomeWorkWith />
       <ServiceCal />
       <ServiceKey />
       <LpPaintTestimonial />

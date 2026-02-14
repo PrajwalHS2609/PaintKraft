@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import mobileBannerImg from "@/images/lpMobileBannerImg.jpg";
+import mobileBannerImg from "@/images/ServiceBanner/ServiceBannerImg.png";
 
 import Image from "next/image";
 import {

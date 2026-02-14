@@ -9,6 +9,9 @@ import ServiceCal from "../Service/ServiceCal/ServiceCal";
 import LpPaintTestimonial from "../PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import LpPaintWhy from "../PaintLandingPage/LpPaintWhy/LpPaintWhy";
 import SanitySeoKeywords from "./SanitySeoKeyword";
+import LpPaintPartner from "../PaintLandingPage/LpPaintPartner/LpPaintPartner";
+import LpPaintServices from "../PaintLandingPage/LpPaintServices/LpPaintServices";
+import HomeWorkWith from "../PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
@@ -35,6 +38,7 @@ export type ServiceContentType = {
   body1?: PortableTextBlock[];
   body2?: PortableTextBlock[];
   mainImage?: { asset?: { url?: string } };
+  mobImage?: { asset?: { url?: string } };
   seoKeywords?: {
     keywords?: string[];
   };
@@ -90,10 +94,12 @@ export default function ServiceContent({
     }
   };
   const imageUrl = content?.mainImage?.asset?.url;
+  const mobImageUrl = content?.mobImage?.asset?.url;
+
 
   return (
     <div className="main-container service-wrapper1">
-      {imageUrl && <SanityHeroSection title={content.title} bannerImg={imageUrl} description={content.description} />}
+      {imageUrl && <SanityHeroSection title={content.title} bannerImg={imageUrl} mobBanner={mobImageUrl} description={content.description} />}
 
       <div className="componentDivider-container">
         <div className="componentDivider-content">
@@ -110,6 +116,17 @@ export default function ServiceContent({
               </div>
             </div>
           )}
+        </div>
+        <LpPaintPartner />
+        <LpPaintServices />
+        <HomeWorkWith />
+        <ServiceCal />
+        <LpPaintWhy />
+        <LpPaintTestimonial />
+        {content.seoKeywords?.keywords && (
+          <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
+        )}
+        <div className="componentDivider-content">
           {content.body2 && (
             <div className="slugContent-wrapper">
               <div className="slugContent-container">
@@ -118,31 +135,7 @@ export default function ServiceContent({
                   components={portableTextComponents}
                 />
 
-                {content.customTable && (
-                  <div className="custom-table">
-                    {content.customTable.title && (
-                      <h3>{content.customTable.title}</h3>
-                    )}
-                    <table>
-                      <thead>
-                        <tr>
-                          {content.customTable.headers?.map((header, idx) => (
-                            <th key={idx}>{header}</th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {content.customTable.rows?.map((row, rowIndex) => (
-                          <tr key={rowIndex}>
-                            {row.cells.map((cell, cellIndex) => (
-                              <td key={cellIndex}>{cell}</td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                )}
+
               </div>
 
               {/* {Array.isArray(content?.faq) && content.faq.length > 0 && (
@@ -151,73 +144,10 @@ export default function ServiceContent({
             </div>
           )}
         </div>
-        <div className="componentDivider-content">
-          <div className="componentDivider-item">
-            <div className="componentDivider-formContainer">
-              <div className="componentDivider-formContent">
-                <h2>Get in Touch</h2>
-                <form className="componentDivider-form" onSubmit={handleSubmit}>
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    name="name"
-                    required
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    name="phone"
-                    required
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    name="email"
-                    required
-                  />
-
-                  <select name="course" id="" required>
-                    <option value="">Select Service</option>
-
-                    <option value="Home Painting">Home Painting</option>
-                    <option value="Apartment Painting">Apartment Painting</option>
-                    <option value="Spray Painting">
-                      Spray Painting</option>
-                    <option value="1 Day Express Painting">
-                      1 Day Express Painting
-                    </option>
-                    <option value="Texture & Designer Walls">
-                      Texture & Designer Walls
-                    </option>
-                    <option value="Waterproofing">
-                      Waterproofing
-                    </option>
-                    <option value="Commercial Painting">
-                      Commercial Painting
-                    </option>
-                  </select>
-
-                  <textarea
-                    name="message"
-                    placeholder="Your Message"
-                  ></textarea>
-
-                  <button type="submit">Submit</button>
-                </form>
-              </div>
-            </div>{" "}
-          </div>
-        </div>
-      </div>
-      <div className="common">
-        <ServiceCal />
-        <LpPaintWhy />
-        <LpPaintTestimonial />
-              {content.seoKeywords?.keywords && (
-        <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
-      )}
       </div>
 
     </div>
+
+
   );
 }

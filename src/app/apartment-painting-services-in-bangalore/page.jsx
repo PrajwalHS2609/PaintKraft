@@ -11,7 +11,7 @@ import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSe
 import serviceImg from "@/images/subService.png";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
-import apartmentBanner from "@/images/ServiceBanner/ApartmentPaintingService.png"
+import apartmentBanner from "@/images/ServiceBanner/ApartmentPaintingService.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
@@ -107,11 +107,13 @@ export default function Apartment() {
           bannerImg={apartmentBanner}
           title="Perfect Paint for Perfect Apartments"
           description="Professional painting services designed to enhance modern apartment living spaces."
+          mobTitle="Perfect Paint for Perfect Apartments"
+          mobDescription="Professional painting services designed to enhance modern apartment living spaces."
         />
         <ApartmentPaintingTopContent />
         <LpPaintPartner />
         <ApartmentService />
-        <HomeWorkWith/>
+        <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />

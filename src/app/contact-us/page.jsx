@@ -10,6 +10,7 @@ export default function ContactUs() {
         bannerImg={contactBanner}
         title="Contact Us"
         description=""
+        mobTitle="Contact Us"
       />
 
       <ContactUsMain />

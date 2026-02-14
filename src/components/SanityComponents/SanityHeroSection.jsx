@@ -78,19 +78,17 @@ const SanityHeroSection = (props) => {
       <div className="lpPaintHeader-content">
         <img
           src={props.bannerImg}
-          alt="Paintkraft Banner"
+          alt={props.title}
           className="lpPaintHeader-desktopImg"
           priority
 
         />
 
-        <Image
-          src={mobileBannerImg}
-          alt="Paintkraft Mobile Banner"
+        <img
+          src={props.mobBanner}
+          alt={props.title}
           className="lpPaintHeader-mobileImg"
           priority
-          width={1800}
-          height={600}
         />
 
         <div className="lpPaintHeader-cover">

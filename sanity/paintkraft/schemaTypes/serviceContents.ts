@@ -23,6 +23,14 @@ export default defineType({
         hotspot: true,
       },
     }),
+        defineField({
+      name: 'mobImage',
+      title: 'Mob image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
     defineField({
       name: 'slug',
       title: 'Slug',

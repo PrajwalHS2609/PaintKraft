@@ -195,10 +195,7 @@ const LpPaintMenu = () => {
 
             <li>
               <span>
-                <Link
-                  href="/"
-                  className={pathname === "/" ? "actives" : ""}
-                >
+                <Link href="/" className={pathname === "/" ? "actives" : ""}>
                   Asian Paints
                 </Link>
               </span>
@@ -248,10 +245,7 @@ const LpPaintMenu = () => {
 
             <li>
               <span>
-                <Link
-                  href="/"
-                  className={pathname === "/" ? "actives" : ""}
-                >
+                <Link href="/" className={pathname === "/" ? "actives" : ""}>
                   Asian Paints
                 </Link>
               </span>
@@ -394,10 +388,10 @@ const LpPaintMenu = () => {
                       <Link
                         id="menuNavLink"
                         onClick={hideSideBar}
-                        href={`/1-day-express-painting-services-in-bangalore`}
+                        href={`/texture-and-designer-services-in-bangalore`}
                         className={
                           pathname ===
-                          "/1-day-express-painting-services-in-bangalore"
+                          "/texture-and-designer-services-in-bangalore"
                             ? "active"
                             : ""
                         }

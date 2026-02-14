@@ -1,2 +1,10 @@
 add blog in the bottom and make it common using sanity
 connect sanity 
+      <div className="common">
+        <ServiceCal />
+        <LpPaintWhy />
+        <LpPaintTestimonial />
+              {content.seoKeywords?.keywords && (
+        <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
+      )}
+      </div>

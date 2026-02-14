@@ -10,7 +10,7 @@ import CommercialPaintingTopContent from "../../components/CommercialPainting/Co
 import CommercialPaintingService from "../../components/CommercialPainting/CommercialPaintingService";
 import CommercialPaintingFaq from "../../components/CommercialPainting/CommercialPaintingFaq";
 import CommercialPaintingBottomContent from "../../components/CommercialPainting/CommercialPaintingBottomContent";
-import commercialBanner from "@/images/ServiceBanner/OfficeSpacePaintingServices.png"
+import commercialBanner from "@/images/ServiceBanner/OfficeSpacePaintingServices.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 
 export const metadata = {
@@ -106,11 +106,13 @@ export default function CommercialPage() {
           bannerImg={commercialBanner}
           title="Premium Paint for Productive Spaces"
           description="Professional commercial painting solutions enhancing aesthetics, durability, and workplace productivity. "
+          mobTitle="Premium Paint for Productive Spaces"
+          mobDescription="Professional commercial painting solutions enhancing aesthetics, durability, and workplace productivity. "
         />
         <CommercialPaintingTopContent />
         <LpPaintPartner />
         <CommercialPaintingService />
-        <HomeWorkWith/>
+        <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
         <LpPaintTestimonial />
