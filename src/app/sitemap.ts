@@ -46,6 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       "/spray-painting-services-in-bangalore",
       "/texture-and-designer-services-in-bangalore",
       "/waterproofing-services-in-bangalore",
+      
     ].map((path) => ({
       url: new URL(path, baseUrl).toString(),
       lastModified: new Date(),
