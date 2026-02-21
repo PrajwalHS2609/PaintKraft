@@ -1,6 +1,6 @@
 import React from "react";
 import "./LpPaintFooter.css";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaQuora, FaYoutube } from "react-icons/fa6";
 import Link from "next/link";
 
 const LpPaintFooter = () => {
@@ -92,6 +92,14 @@ const LpPaintFooter = () => {
                 target="_blank"
               >
                 <FaYoutube className="lpPaintFooter-socialIco" />
+              </a>
+            </li>
+             <li>
+              <a
+                href="https://www.quora.com/profile/Paintkraft"
+                target="_blank"
+              >
+                <FaQuora className="lpPaintFooter-socialIco" />
               </a>
             </li>
           </ul>
