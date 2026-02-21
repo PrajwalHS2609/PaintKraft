@@ -1161,11 +1161,22 @@
 .head-container > h5 {
   color: var(--lpCustom1);
 }
+.slugContent-container {
+  padding: 20px;
+}
+.slugContent-container > p {
+  text-align: justify;
+}
 .slugContent-container h3 {
   color: var(--lpCustom1);
 }
 .slugContent-container strong {
   color: var(--lpCustom1);
+}
+.slugContent-container > p > a {
+  text-decoration: none;
+  color: var(--lpCustom1);
+  font-weight: 500;
 }
 /* ------------------------Divider-------------------------- */
 .componentDivider-container {
@@ -1295,11 +1306,11 @@
 .custom-table th {
   background-color: var(--lpCustom4);
   font-weight: 600;
-  color:var(--lpCustom1);
+  color: var(--lpCustom1);
 }
 
 .custom-table tr:nth-child(even) {
-  background-color:white ;
+  background-color: white;
 }
 
 .custom-table tr:hover {
@@ -1368,12 +1379,11 @@
   display: none;
 }
 
-
 /* ---------- FAQ Section ---------- */
 .faq-section {
   margin: 3rem 0;
   padding: 2rem;
-  background: var(--customBg1);
+  background: white;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   width: 80%;
@@ -1384,7 +1394,7 @@
   font-weight: 500;
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--customColor1);
+  color: var(--lpCustom1);
   position: relative;
 }
 
@@ -1406,7 +1416,7 @@
 }
 
 .faq-item {
-  background: white;
+  background: var(--lpCustom2);
   border-radius: 12px;
   padding: 1rem 1.5rem;
   border: 1px solid #e5e7eb;
@@ -1456,4 +1466,162 @@
 /* Optional: smooth details opening */
 details[open] .faq-answer {
   animation: slideDown 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .faq-section {
+    padding: 10px;
+
+    width: 100%;
+  }
+}
+/* ----------------------------------Highlight----------------------------------- */
+
+.highlight-box {
+  background: white;
+  width: fit-content;
+  border: 4px dotted var(--lpCustom3);
+  margin: 20px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 15px;
+}
+.highlight-title {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.highlight-content > p {
+  font-size: 16px;
+}
+.highlight-box > h5 {
+  color: var(--lpCustom1);
+}
+/* ---------------------------QuoteBlock----------------------------- */
+.quote-block {
+  border-left: 4px solid var(--lpCustom3);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background-color: var(--lpCustom4);
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--lpCustom1);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: right;
+  color: #666;
+  font-weight: bold;
+}
+.quote-text > span {
+  font-size: 30px;
+}
+
+/* ------------------------Accordian-------------------------------- */
+
+.custom-accordion {
+  margin: 20px 0;
+}
+
+/* Accordion Wrapper */
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  width: 100%;
+  background-color: var(--lpCustom3);
+}
+
+/* Accordion Header */
+.accordion-title {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  background: var(--customColor1);
+  color: #222;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  user-select: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+  list-style: none;
+}
+.accordion-title > h3 {
+  color: white;
+}
+.accordion-title:hover {
+  background: var(--customColor1);
+}
+
+/* Add + / - icon automatically */
+.accordion-title::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #666;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+/* When accordion is open */
+.accordion-item[open] .accordion-title::after {
+  content: "−";
+  color: var(--customColor1);
+}
+
+/* Accordion Content */
+.accordion-content {
+  padding: 20px;
+  color: black;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  background: #fff;
+  transition: all 0.35s ease;
+  opacity: 0;
+  overflow-x: scroll;
+  height: 100%;
+}
+.accordion-content > p {
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+}
+.accordion-content > p > strong {
+  color: var(--customColor1);
+}
+.accordion-content > p > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--customColor1);
+}
+/* Animate open content */
+.accordion-item[open] .accordion-content {
+  opacity: 1;
+  padding-top: 0.75rem;
+}
+
+/* Optional – subtle border highlight when open */
+.accordion-item[open] {
+  border-color: var(--customColor1);
+  box-shadow: 0 2px 8px var(--neutralColor);
 }

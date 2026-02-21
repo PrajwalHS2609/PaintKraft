@@ -117,9 +117,11 @@ export const portableTextComponents: PortableTextComponents = {
       if (!value?.text) return null;
 
       return (
-        <blockquote>
-          <p>{value.text}</p>
-          {value.author && <cite>— {value.author}</cite>}
+        <blockquote className="quote-block">
+          <p className="quote-text"> {value.text} </p>
+          {value.author && (
+            <cite className="quote-author">— {value.author}</cite>
+          )}
         </blockquote>
       );
     },
