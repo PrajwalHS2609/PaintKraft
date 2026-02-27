@@ -41,8 +41,11 @@
   padding: 50px;
 }
 .accordion-button:not(.collapsed) {
-  background-color: var(--customBg) !important;
+  background-color: var(--lpCustom4) !important;
   color: black;
+}
+.lpPaintFaq-body {
+  background-color: var(--lpCustom4);
 }
 .accordion-button:focus {
   box-shadow: none !important;
@@ -54,6 +57,7 @@
 .lpPaintFaq-accHeader {
   font-weight: 500;
 }
+
 @media screen and (max-width: 768px) {
   .lpPaintFaq-container > h2 {
     font-size: 30px;

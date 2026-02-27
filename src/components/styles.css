@@ -1470,7 +1470,6 @@ details[open] .faq-answer {
 @media screen and (max-width: 768px) {
   .faq-section {
     padding: 10px;
-
     width: 100%;
   }
 }
