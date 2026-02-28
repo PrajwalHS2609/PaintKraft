@@ -5,11 +5,13 @@ import "./Calculator.css";
 type ProjectType = "economy" | "premium" | "luxury" | "";
 type SpaceType = "interior" | "exterior" | "";
 type PaintMode = "fresh" | "repaint" | "";
+type CeilingType = "with" | "without" | "";
 
 const Calculator: React.FC = () => {
   const [paintMode, setPaintMode] = useState<PaintMode>("");
   const [spaceType, setSpaceType] = useState<SpaceType>("");
   const [projectType, setProjectType] = useState<ProjectType>("");
+  const [ceilingType, setCeilingType] = useState<CeilingType>("");
   const [area, setArea] = useState<string>("");
   const [cost, setCost] = useState<number | null>(null);
   const [error, setError] = useState<string>("");
@@ -21,32 +23,12 @@ const Calculator: React.FC = () => {
     Record<"interior" | "exterior", Record<ProjectType, number>>
   > = {
     fresh: {
-      interior: {
-        economy: 17.50,
-        premium: 21,
-        luxury: 27,
-        "": 0,
-      },
-      exterior: {
-        economy: 13,
-        premium: 16,
-        luxury: 22,
-        "": 0,
-      },
+      interior: { economy: 17.5, premium: 21, luxury: 27, "": 0 },
+      exterior: { economy: 13, premium: 16, luxury: 22, "": 0 },
     },
     repaint: {
-      interior: {
-        economy: 10,
-        premium: 13,
-        luxury: 18,
-        "": 0,
-      },
-      exterior: {
-        economy: 13,
-        premium: 16,
-        luxury: 22,
-        "": 0,
-      },
+      interior: { economy: 10, premium: 13, luxury: 18, "": 0 },
+      exterior: { economy: 13, premium: 16, luxury: 22, "": 0 },
     },
     "": {
       interior: { economy: 0, premium: 0, luxury: 0, "": 0 },
@@ -79,21 +61,9 @@ const Calculator: React.FC = () => {
       "": [],
     },
     repaint: {
-      economy: [
-        "Touch up Putty",
-        "2 Coat Paint",
-      ],
-      premium: [
-        "Touch up Putty",
-        "2 Coat Paint",
-        "1 Coat Primer",
-
-      ],
-      luxury: [
-        "Touch up Putty",
-        "2 Coat Paint",
-        "1 Coat Primer",
-      ],
+      economy: ["Touch up Putty", "2 Coat Paint"],
+      premium: ["Touch up Putty", "2 Coat Paint", "1 Coat Primer"],
+      luxury: ["Touch up Putty", "2 Coat Paint", "1 Coat Primer"],
       "": [],
     },
     "": { economy: [], premium: [], luxury: [], "": [] },
@@ -102,8 +72,17 @@ const Calculator: React.FC = () => {
   /* ================= CALCULATION ================= */
 
   const calculateCost = () => {
-    if (!paintMode || !spaceType || !projectType || !area) {
-      setError("Please select painting mode, area type, package and enter area");
+    const isCeilingRequired =
+      paintMode === "repaint" && spaceType === "interior";
+
+    if (
+      !paintMode ||
+      !spaceType ||
+      !projectType ||
+      !area ||
+      (isCeilingRequired && !ceilingType)
+    ) {
+      setError("Please select all required fields and enter area");
       setCost(null);
       return;
     }
@@ -111,8 +90,14 @@ const Calculator: React.FC = () => {
     setError("");
 
     const ratePerSqft = rates[paintMode][spaceType][projectType];
-    const total = Number(area) * ratePerSqft * 2.5;
 
+    let multiplier = 2.5;
+
+    if (isCeilingRequired) {
+      multiplier = ceilingType === "without" ? 1.5 : 2.5;
+    }
+
+    const total = Number(area) * ratePerSqft * multiplier;
     setCost(total);
   };
 
@@ -124,9 +109,11 @@ const Calculator: React.FC = () => {
         <label>
           <input
             type="radio"
-            name="mode"
             checked={paintMode === "fresh"}
-            onChange={() => setPaintMode("fresh")}
+            onChange={() => {
+              setPaintMode("fresh");
+              setCeilingType(""); // reset
+            }}
           />
           <span>Fresh Painting</span>
         </label>
@@ -134,7 +121,6 @@ const Calculator: React.FC = () => {
         <label>
           <input
             type="radio"
-            name="mode"
             checked={paintMode === "repaint"}
             onChange={() => setPaintMode("repaint")}
           />
@@ -148,7 +134,6 @@ const Calculator: React.FC = () => {
         <label>
           <input
             type="radio"
-            name="space"
             checked={spaceType === "interior"}
             onChange={() => setSpaceType("interior")}
           />
@@ -158,13 +143,41 @@ const Calculator: React.FC = () => {
         <label>
           <input
             type="radio"
-            name="space"
             checked={spaceType === "exterior"}
-            onChange={() => setSpaceType("exterior")}
+            onChange={() => {
+              setSpaceType("exterior");
+              setCeilingType(""); // reset
+            }}
           />
           <span>Exterior</span>
         </label>
       </div>
+
+      {/* CEILING — ONLY FOR REPAINT + INTERIOR */}
+      {paintMode === "repaint" && spaceType === "interior" && (
+        <>
+          <h3>Select Ceiling *</h3>
+          <div className="radio-group">
+            <label>
+              <input
+                type="radio"
+                checked={ceilingType === "with"}
+                onChange={() => setCeilingType("with")}
+              />
+              <span>With Ceiling</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                checked={ceilingType === "without"}
+                onChange={() => setCeilingType("without")}
+              />
+              <span>Without Ceiling</span>
+            </label>
+          </div>
+        </>
+      )}
 
       {/* PROJECT */}
       <h3>Select Package *</h3>
@@ -172,7 +185,6 @@ const Calculator: React.FC = () => {
         <label>
           <input
             type="radio"
-            name="project"
             checked={projectType === "economy"}
             onChange={() => setProjectType("economy")}
           />
@@ -182,7 +194,6 @@ const Calculator: React.FC = () => {
         <label>
           <input
             type="radio"
-            name="project"
             checked={projectType === "premium"}
             onChange={() => setProjectType("premium")}
           />
@@ -192,7 +203,6 @@ const Calculator: React.FC = () => {
         <label>
           <input
             type="radio"
-            name="project"
             checked={projectType === "luxury"}
             onChange={() => setProjectType("luxury")}
           />
@@ -220,7 +230,6 @@ const Calculator: React.FC = () => {
             <h2>Estimated Cost: ₹{cost.toLocaleString()}</h2>
           </div>
 
-          {/* SERVICES – ONLY FOR INTERIOR */}
           {spaceType === "interior" && projectType && (
             <div className="service-details">
               <h4>Service Includes</h4>
@@ -233,11 +242,12 @@ const Calculator: React.FC = () => {
               </ul>
             </div>
           )}
-
         </>
       )}
+
       <div className="service-details2">
-        <p>Contact Us : <a href="tel:7090234446">7090234446</a>
+        <p>
+          Contact Us : <a href="tel:7090234446">7090234446</a>
         </p>
         <p>1-Hr Home Visit or Get 10% Off</p>
       </div>

@@ -3,16 +3,15 @@ import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSe
 import LpPaintPartner from "../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import PaintContact from "../../components/PaintLandingPage/PaintContact/PaintContact";
 import WaterproofingTopContent from "../../components/Waterproofing/WaterproofingTopContent";
 import WaterproofingService from "../../components/Waterproofing/WaterproofingService";
 import WaterproofingBottomContent from "../../components/Waterproofing/WaterproofingBottomContent";
-import waterproofingBanner from "@/images/ServiceBanner/WaterproofingService.png"
+import waterproofingBanner from "@/images/ServiceBanner/WaterproofingService.png";
 import WaterproofingFaq from "../../components/Waterproofing/WaterproofingFaq";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
-
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 export const metadata = {
   title:
     "Waterproofing Service in Bangalore | House Waterproofing Price in Bangalore",
@@ -119,10 +118,10 @@ export default function Waterproofing() {
         <WaterproofingTopContent />
         <LpPaintPartner />
         <WaterproofingService />
-        <HomeWorkWith/>
+        <HomeTestimonialVid />
+        <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
-        <LpPaintTestimonial />
         <ServiceHow />
         <PaintContact />
         <WaterproofingFaq />

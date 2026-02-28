@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background: linear-gradient(135deg, #1f1c2c, #928dab); */
+background-color: var(--lpCustom2);
 }
 .testimonial-heading {
   display: flex;

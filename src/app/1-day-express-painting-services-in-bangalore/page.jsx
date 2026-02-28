@@ -1,5 +1,4 @@
 import Script from "next/script";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
@@ -11,6 +10,7 @@ import Day1ExpressPaintingService from "../../components/Day1ExpressPainting/Day
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import day1ExperssBanner from "@/images/ServiceBanner/1DayExpterssPaintingService.png";
 import HomeWorkWith from "./../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 export const metadata = {
   title:
     "1 Day Express Painting Service in Bangalore | Same Day Painting Price in Bangalore",
@@ -109,10 +109,10 @@ export default function Day1ExpressPainting() {
         />
         <Day1ExpressPaintingTopContent />
         <Day1ExpressPaintingService />
+        <HomeTestimonialVid />
         <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
-        <LpPaintTestimonial />
         <ServiceHow />
         <PaintContact />
         <Day1ExpressPaintingFaq />

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Calculator from "../Calculator";
+import "./CalculatorHeroSection.css"
 import {
   MdCurrencyRupee,
   MdOutlineCleaningServices,
@@ -36,7 +37,7 @@ const CalculatorHeroSection = () => {
     },
   ];
   return (
-    <div className="lpPaintHeader-container">
+    <div className="lpPaintHeader-container" id="calcHeroSection-container">
       <div className="lpPaintHeader-content">
         <Image
           src={bannerImg}

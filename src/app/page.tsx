@@ -2,7 +2,6 @@ import LpPaintHeader from "@/components/PaintLandingPage/LpPaintHeader/LpPaintHe
 import LpPaintPartner from "@/components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import LpPaintServices from "@/components/PaintLandingPage/LpPaintServices/LpPaintServices";
 import LpPaintWhy from "@/components/PaintLandingPage/LpPaintWhy/LpPaintWhy";
-import LpPaintTestimonial from "@/components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import LpPaintFaq from "@/components/PaintLandingPage/LpPaintFaq/LpPaintFaq";
 import PaintContact from './../components/PaintLandingPage/PaintContact/PaintContact';
 import HomeBlog from "@/components/PaintLandingPage/HomeBlog/HomeBlog.jsx"
@@ -25,11 +24,10 @@ export default function LpPaint() {
       <LpPaintHeader />
       <LpPaintPartner />
       <LpPaintServices />
+      <HomeTestimonialVid />
       <HomeWorkWith />
       <ServiceCal />
       <LpPaintWhy />
-      <LpPaintTestimonial />
-      <HomeTestimonialVid/>
       <PaintContact />
       <LpPaintFaq />
       <HomeBlog />

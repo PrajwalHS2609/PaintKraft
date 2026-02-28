@@ -4,10 +4,10 @@ import LpPaintPartner from "../../components/PaintLandingPage/LpPaintPartner/LpP
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import bannerImg from "@/images/LpBannerImg.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
-// import mobileBannerImg from "@/images/lpMobileBannerImg.jpg";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
+
 export default function ServicePage() {
   return (
     <div>
@@ -20,10 +20,10 @@ export default function ServicePage() {
       />
       <LpPaintPartner />
       <LpPaintServices />
+      <HomeTestimonialVid />
       <HomeWorkWith />
       <ServiceCal />
       <ServiceKey />
-      <LpPaintTestimonial />
       <ServiceHow />
     </div>
   );

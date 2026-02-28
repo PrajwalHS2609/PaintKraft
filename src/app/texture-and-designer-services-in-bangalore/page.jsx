@@ -4,15 +4,14 @@ import TextureDesignTopContent from "../../components/TextureDesign/TextureDesig
 import LpPaintPartner from "../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import PaintContact from "../../components/PaintLandingPage/PaintContact/PaintContact";
 import TextureDesignBottomContent from "../../components/TextureDesign/TextureDesignBottomContent";
 import TextureDesignFaq from "./../../components/TextureDesign/TextureDesignFaq";
-import serviceImg from "@/images/subService.png";
 import TextureDesignService from "../../components/TextureDesign/TextureDesignService";
 import textureAndDesignBanner from "@/images/ServiceBanner/Texture&DesignerWallService.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 
 export const metadata = {
   title:
@@ -120,11 +119,11 @@ export default function TextureDesignPage() {
         />
         <TextureDesignTopContent />
         <TextureDesignService />
+        <HomeTestimonialVid />
         <HomeWorkWith />
         <LpPaintPartner />
         <ServiceCal />
         <ServiceKey />
-        <LpPaintTestimonial />
         <ServiceHow />
         <PaintContact />
         <TextureDesignFaq />

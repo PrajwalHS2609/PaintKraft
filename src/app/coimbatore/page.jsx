@@ -2,11 +2,11 @@ import LpPaintWhy from "./../../components/PaintLandingPage/LpPaintWhy/LpPaintWh
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import LpCoimbatoreFaq from "../../components/LpCoimbatorePage/LpCoimbatoreFaq";
 import LpCoimbatorePartner from "../../components/LpCoimbatorePage/LpCoimbatorePartner";
-import LpCoimbatoreTestimonial from "../../components/LpCoimbatorePage/LpCoimbatoreTestimonial";
 import LpCoimbatoreService from "../../components/LpCoimbatorePage/LpCoimbatoreService";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSection";
 import day1ExpressBanner from "@/images/ServiceBanner/1DayExpterssPaintingService.png";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 
 export default function CoimbatorePage() {
   return (
@@ -20,9 +20,9 @@ export default function CoimbatorePage() {
       />
       <LpCoimbatorePartner />
       <LpCoimbatoreService />
+      <HomeTestimonialVid />
       <HomeWorkWith />
       <LpPaintWhy />
-      <LpCoimbatoreTestimonial />
       {/* <LpPaintSteps /> */}
       <PaintContact />
       <LpCoimbatoreFaq />

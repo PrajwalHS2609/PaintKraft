@@ -1,12 +1,12 @@
 import LpPaintFaq from "@/components/PaintLandingPage/LpPaintFaq/LpPaintFaq";
 import LpPaintPartner from "@/components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
-import LpPaintTestimonial from "@/components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import LpPaintWhy from "@/components/PaintLandingPage/LpPaintWhy/LpPaintWhy";
 import PaintContact from "@/components/PaintLandingPage/PaintContact/PaintContact";
 import BangaloreLpService from "./../../components/BangaloreLp/BangaloreLpService";
 import HomeWorkWith from "@/components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 import ServiceHeroSection from "./../../components/ServiceComponents/ServiceHeroSection";
 import bannerImg from "@/images/LpBannerImg.png";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 
 export default function BangaloreLp() {
   return (
@@ -22,9 +22,9 @@ export default function BangaloreLp() {
       />
       <LpPaintPartner />
       <BangaloreLpService />
+      <HomeTestimonialVid />
       <HomeWorkWith />
       <LpPaintWhy />
-      <LpPaintTestimonial />
       <PaintContact />
       <LpPaintFaq />
     </div>

@@ -3,7 +3,6 @@ import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSe
 import LpPaintPartner from "../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import PaintContact from "../../components/PaintLandingPage/PaintContact/PaintContact";
 import CommercialPaintingTopContent from "../../components/CommercialPainting/CommercialPaintingTopContent";
@@ -12,6 +11,7 @@ import CommercialPaintingFaq from "../../components/CommercialPainting/Commercia
 import CommercialPaintingBottomContent from "../../components/CommercialPainting/CommercialPaintingBottomContent";
 import commercialBanner from "@/images/ServiceBanner/OfficeSpacePaintingServices.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 
 export const metadata = {
   title:
@@ -112,10 +112,11 @@ export default function CommercialPage() {
         <CommercialPaintingTopContent />
         <LpPaintPartner />
         <CommercialPaintingService />
+        <HomeTestimonialVid />
         <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
-        <LpPaintTestimonial />
+        <HomeTestimonialVid />
         <ServiceHow />
         <PaintContact />
         <CommercialPaintingFaq />

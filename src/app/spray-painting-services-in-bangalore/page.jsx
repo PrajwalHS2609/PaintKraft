@@ -1,5 +1,4 @@
 import Script from "next/script";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
@@ -8,10 +7,11 @@ import SprayPaintingBottomContent from "../../components/SprayPainting/SprayPain
 import SprayPaintingFaq from "../../components/SprayPainting/SprayPaintingFaq";
 import SprayPaintingService from "../../components/SprayPainting/SprayPaintingService";
 import SprayPaintingTopContent from "../../components/SprayPainting/SprayPaintingTopContent";
-import sprayBanner from "@/images/ServiceBanner/HomeSprayPaintingService.png"
+import sprayBanner from "@/images/ServiceBanner/HomeSprayPaintingService.png";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 export const metadata = {
   title:
     "Spray Painting Service in Bangalore | House Painting Price in Bangalore",
@@ -104,17 +104,17 @@ export default function SprayPainting() {
           bannerImg={sprayBanner}
           title="Perfect Finish with Spray Technology"
           description="Advanced spray painting delivering smooth, flawless, and long-lasting professional finishes"
-        mobTitle="Perfect Finish with Spray Technology"
-         mobDescription="Advanced spray painting delivering smooth, flawless, and long-lasting professional finishes"
-       
-       />
+          mobTitle="Perfect Finish with Spray Technology"
+          mobDescription="Advanced spray painting delivering smooth, flawless, and long-lasting professional finishes"
+        />
         <SprayPaintingTopContent />
         <LpPaintPartner />
         <SprayPaintingService />
-        <HomeWorkWith/>
+        <HomeTestimonialVid />
+        <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
-        <LpPaintTestimonial />
+        <HomeTestimonialVid />
         <ServiceHow />
         <PaintContact />
         <SprayPaintingFaq />

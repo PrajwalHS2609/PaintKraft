@@ -2,7 +2,6 @@ import Script from "next/script";
 import HomePaintingBottomContent from "../../components/HomePainting/HomePaintingBottomContent";
 import HomePaintingTopContent from "../../components/HomePainting/HomePaintingTopContent";
 import HomePaintingService from "../../components/HomePainting/HomeService";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
@@ -12,6 +11,7 @@ import PaintContact from "./../../components/PaintLandingPage/PaintContact/Paint
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import homeServiceBanner from "@/images/ServiceBanner/HomePaintingServices.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 
 export const metadata = {
   title:
@@ -119,10 +119,11 @@ export default function HomePainting() {
         <HomePaintingTopContent />
         <LpPaintPartner />
         <HomePaintingService />
+        <HomeTestimonialVid />
         <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
-        <LpPaintTestimonial />
+        <HomeTestimonialVid />
         <ServiceHow />
         <PaintContact />
         <HomePaintingFaq />

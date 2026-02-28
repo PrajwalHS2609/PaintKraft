@@ -3,16 +3,15 @@ import ApartmentPaintingBottomContent from "../../components/ApartmentPainting/A
 import ApartmentPaintingFaq from "../../components/ApartmentPainting/ApartmentPaintingFaq";
 import ApartmentPaintingTopContent from "../../components/ApartmentPainting/ApartmentPaintingTopContent";
 import ApartmentService from "../../components/ApartmentPainting/ApartmentService";
-import LpPaintTestimonial from "../../components/PaintLandingPage/LpPaintTestimonial/LpPaintTestimonial";
 import ServiceCal from "../../components/Service/ServiceCal/ServiceCal";
 import ServiceHow from "../../components/Service/ServiceHow/ServiceHow";
 import ServiceKey from "../../components/Service/ServiceKey/ServiceKey";
 import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSection";
-import serviceImg from "@/images/subService.png";
 import LpPaintPartner from "./../../components/PaintLandingPage/LpPaintPartner/LpPaintPartner";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
 import apartmentBanner from "@/images/ServiceBanner/ApartmentPaintingService.png";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
+import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
 
 export const metadata = {
   title:
@@ -113,10 +112,10 @@ export default function Apartment() {
         <ApartmentPaintingTopContent />
         <LpPaintPartner />
         <ApartmentService />
+        <HomeTestimonialVid />
         <HomeWorkWith />
         <ServiceCal />
         <ServiceKey />
-        <LpPaintTestimonial />
         <ServiceHow />
         <PaintContact />
         <ApartmentPaintingFaq />
