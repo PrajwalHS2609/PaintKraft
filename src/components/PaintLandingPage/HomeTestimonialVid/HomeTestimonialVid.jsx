@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import { FaRegCirclePlay } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
 import "./HomeTestimonialVid.css";
 
 const videos = {
@@ -25,30 +25,31 @@ const HomeTestimonialVid = () => {
         </p>
       </div>
       <br />
-      <div className="testimonial-content">
-        <div className="testimonial-vidWrapper">
-          <iframe
-            src={videos[activeVideo]}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+      <div className="homeTestimonial-wrapper">
+        <div className="testimonial-content">
+          <div className="testimonial-vidWrapper">
+            <iframe
+              src={videos[activeVideo]}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
-      </div>
-      <div className="testimonial-content">
-        <div className="testimonial-icons">
-          {Object.keys(videos).map((videoKey) => (
-            <div
-              key={videoKey}
-              className={`testimonial-item ${
-                activeVideo === videoKey ? "active" : ""
-              }`}
-              onClick={() => setActiveVideo(videoKey)}
-            >
-              <FaRegCirclePlay className="testimonial-icon" />
-              <p>{videoKey}</p>
-            </div>
-          ))}
+        <div className="testimonial-content">
+          <div className="testimonial-icons">
+            {Object.keys(videos).map((videoKey) => (
+              <div
+                key={videoKey}
+                className={`testimonial-item ${
+                  activeVideo === videoKey ? "active" : ""
+                }`}
+                onClick={() => setActiveVideo(videoKey)}
+              >
+                <FaYoutube className="testimonial-icon" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
