@@ -46,12 +46,12 @@ const CalculatorHeroSection = () => {
           priority
         />
 
-        <Image
+        {/* <Image
           src={mobileBannerImg}
           alt="Paintkraft Mobile Banner"
           className="lpPaintHeader-mobileImg"
           priority
-        />
+        /> */}
 
         <div className="lpPaintHeader-cover">
           <div className="lpPaintHeader-heading">

@@ -45,6 +45,9 @@ const ContactUsAddress = () => {
               <p>
                 <a href="tel:7090234446">(+91) 7090234446</a>
               </p>
+              <p>
+                <a href="tel:8071511012">(+91) 8071511012</a>
+              </p>
             </div>
           </div>
         </div>

@@ -45,6 +45,9 @@ const LpPaintFooter = () => {
             <p>
               <a href="tel:7090234446">7090234446</a>
             </p>
+            <p>
+              <a href="tel:8071511012">8071511012</a>
+            </p>
           </div>
 
           <div className="lpPaintFooter-item">
