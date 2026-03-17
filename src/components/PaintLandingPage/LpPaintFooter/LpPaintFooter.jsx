@@ -24,7 +24,7 @@ const LpPaintFooter = () => {
               <Link href={"#services"}>1 Day Express Painting</Link>
             </li>
             <li>
-              <Link href={"#services"}>Texture & Designer Walls</Link>
+              <Link href={"/blog"}>Blog</Link>
             </li>
           </ul>
         </div>
