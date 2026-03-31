@@ -1,14 +1,14 @@
 import LpPaintWhy from "./../../components/PaintLandingPage/LpPaintWhy/LpPaintWhy";
 import PaintContact from "./../../components/PaintLandingPage/PaintContact/PaintContact";
-import LpCoimbatoreFaq from "../../components/LpCoimbatorePage/LpCoimbatoreFaq";
-import LpCoimbatorePartner from "../../components/LpCoimbatorePage/LpCoimbatorePartner";
-import LpCoimbatoreService from "../../components/LpCoimbatorePage/LpCoimbatoreService";
 import HomeWorkWith from "../../components/PaintLandingPage/HomeWorkWith/HomeWorkWith";
 import ServiceHeroSection from "../../components/ServiceComponents/ServiceHeroSection";
 import day1ExpressBanner from "@/images/ServiceBanner/1DayExpterssPaintingService.png";
 import HomeTestimonialVid from "./../../components/PaintLandingPage/HomeTestimonialVid/HomeTestimonialVid";
+import LpHyderabadPartner from "../../components/LpHyderabadPage/LpHyderabadPartner";
+import LpHyderabadService from "../../components/LpHyderabadPage/LpHyderabadService";
+import LpHyderabadFaq from "../../components/LpHyderabadPage/LpHyderabadFaq";
 
-export default function CoimbatorePage() {
+export default function HyderabadPage() {
   return (
     <div>
       <ServiceHeroSection
@@ -18,13 +18,13 @@ export default function CoimbatorePage() {
         mobTitle="Painted Today. Enjoy Tomorrow"
         mobDescription="Fast professional painting service delivering flawless results within one day"
       />
-      <LpCoimbatorePartner />
-      <LpCoimbatoreService />
+      <LpHyderabadPartner />
+      <LpHyderabadService />
       <HomeTestimonialVid />
       <HomeWorkWith />
       <LpPaintWhy />
       <PaintContact />
-      <LpCoimbatoreFaq />
+      <LpHyderabadFaq />
     </div>
   );
 }

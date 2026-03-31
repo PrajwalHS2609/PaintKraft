@@ -37,11 +37,9 @@ const LpPaintFooter = () => {
             <strong>Phone</strong>
 
             <p>
-              <a href="tel:9071274446">9071274446</a>
+              <a href="tel:08071511012">08071511012</a>
             </p>
-            <p>
-              <a href="tel:8792446647">8792446647</a>
-            </p>
+
             <p>
               <a href="tel:7090234446">7090234446</a>
             </p>

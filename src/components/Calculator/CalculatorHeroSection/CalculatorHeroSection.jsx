@@ -74,7 +74,7 @@ const CalculatorHeroSection = () => {
               <Link href="#services">
                 <button>Explore Now</button>
               </Link>
-              <a href="tel:9071274446">
+              <a href="tel:08071511012">
                 <button>Contact Us</button>
               </a>
             </div>

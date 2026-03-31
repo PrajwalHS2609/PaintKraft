@@ -37,10 +37,7 @@ const ContactUsAddress = () => {
             <div className="contactAddressItem2">
               <h5>Phone:</h5>
               <p>
-                <a href="tel:9071274446">(+91) 9071274446</a>
-              </p>
-              <p>
-                <a href="tel:8792446647">(+91) 8792446647</a>
+                <a href="tel:08071511012">08071511012</a>
               </p>
               <p>
                 <a href="tel:7090234446">(+91) 7090234446</a>

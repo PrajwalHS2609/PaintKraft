@@ -24,6 +24,8 @@ export default function RootLayout({
   const pathname = usePathname();
   const isBangloreLanding = pathname.startsWith("/bangalore");
   const isCoimbatoreLanding = pathname.startsWith("/coimbatore");
+  const isMysoreLanding = pathname.startsWith("/mysore");
+  const isHyderabadLanding = pathname.startsWith("/hyderabad");
 
   const [loading, setLoading] = useState(true);
 
@@ -129,7 +131,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {isBangloreLanding ? (<BangaloreLpNavbar />) : isCoimbatoreLanding ? (<BangaloreLpNavbar />) : <LpPaintNavbar />}
+        {isBangloreLanding ? (<BangaloreLpNavbar />) : isCoimbatoreLanding ? (<BangaloreLpNavbar />): isMysoreLanding ? (<BangaloreLpNavbar />): isHyderabadLanding ? (<BangaloreLpNavbar />) : <LpPaintNavbar />}
         {loading ? <Loader /> : children}
         <LpPaintFooter />
       </body>

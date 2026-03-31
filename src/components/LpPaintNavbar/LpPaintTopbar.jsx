@@ -13,7 +13,7 @@ const LpPaintTopbar = () => {
         <a href="https://api.whatsapp.com/send?phone=917090234446">
           <FaWhatsapp className="lpPaintTop-icon" />
         </a>
-        <a href="tel:9071274446">
+        <a href="tel:08071511012">
           <IoMdCall className="lpPaintTop-icon" id="lpPaintTop-icon2"/>
         </a>
       </div>
