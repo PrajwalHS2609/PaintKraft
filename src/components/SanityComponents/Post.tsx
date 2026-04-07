@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import { PortableText } from '@portabletext/react';
-import BlogAuthor from '../BlogPage/BlogAuthor';
+// import BlogAuthor from '../BlogPage/BlogAuthor';
 import "@/components/styles.css"
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
@@ -113,8 +113,8 @@ export default function PostContent({
           components={portableTextComponents}
         />
       </div>
-      <BlogAuthor slug={content.slug.current} />
-
+      {/* <BlogAuthor slug={content.slug.current} /> */}
+<p>Author test</p>
     </div>
 
   );
