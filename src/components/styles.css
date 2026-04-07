@@ -850,7 +850,15 @@
 .blogHead-content > p > strong {
   color: var(--lpCustom1);
 }
-
+.blogHead-content > p > a {
+  color: var(--lpCustom1);
+  text-decoration: none;
+}
+.blogHead-content > p {
+  color: var(--lpCustom1);
+  text-decoration: none;
+  text-align: justify;
+}
 .blogHead-content > ul > li > a {
   text-decoration: none;
   color: var(--lpCustom1);
