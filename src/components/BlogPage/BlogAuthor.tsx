@@ -3,10 +3,12 @@
 import React, { useEffect, useState } from "react";
 import { PortableText } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/types";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaYoutube } from "react-icons/fa6";
 import { client } from "@/sanity/client";
+import "@/components/BlogPage/BlogSidebar/Blog.css"
 export const revalidate = 0;
+
 
 /* ---------------- TYPES ---------------- */
 
@@ -16,8 +18,8 @@ type Author = {
   designation?: string;
   bio?: PortableTextBlock[];
   instagram?: string | null;
-  linkedin?: string | null;
-  twitter?: string | null;
+  facebook?: string | null;
+  youtube?: string | null;
   mainImage?: {
     asset?: {
       url?: string;
@@ -44,8 +46,8 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
             designation,
             bio,
             instagram,
-            linkedin,
-            twitter,
+            facebook,
+            youtube,
             mainImage{
               asset->{url}
             }
@@ -90,23 +92,23 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
           </a>
         )}
 
-        {author.linkedin && (
+        {author.facebook && (
           <a
-            href={author.linkedin}
+            href={author.facebook}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="authorSocialIcon" />
+            <FaFacebook className="authorSocialIcon" />
           </a>
         )}
 
-        {author.twitter && (
+        {author.youtube && (
           <a
-            href={author.twitter}
+            href={author.youtube}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaXTwitter className="authorSocialIcon" />
+            <FaYoutube className="authorSocialIcon" />
           </a>
         )}
       </div>

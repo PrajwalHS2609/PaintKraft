@@ -56,13 +56,13 @@ export default defineType({
       type: "url",
     }),
     defineField({
-      name: "linkedin",
-      title: "LinkedIn URL",
+      name: "facebook",
+      title: "Facebook URL",
       type: "url",
     }),
     defineField({
-      name: "twitter",
-      title: "X / Twitter URL",
+      name: "youtube",
+      title: "Youtube URL",
       type: "url",
     }),
   ],
