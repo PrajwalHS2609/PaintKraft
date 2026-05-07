@@ -1,0 +1,59 @@
+.testiContainer {
+  /* border: solid; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px;
+  background-color: var(--lpCustom2);
+  margin-top: 30px;
+}
+.testiHeadContainer > h2 {
+  font-size: 30px;
+}
+.testiHeadContainer > h2 > span {
+  color: var(--lp1Custom2);
+}
+.testiMainContainer {
+  /* border: solid green; */
+  width: 80%;
+}
+.testimonialCardContainer {
+  /* border: solid greenyellow; */
+  width: 90%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testiMainContent {
+  /* border: solid; */
+  margin-right: 10px;
+  width: 40%;
+}
+.testimonialCardContainer > p {
+  text-align: justify;
+  color: var(--lp1Custom1);
+}
+.testimonialCardContainer > p > span {
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .testiHeadContainer > h2 {
+    /* border: solid; */
+    width: 100%;
+    font-size: 25px;
+      padding:10px;
+
+  }
+  .testiContainer {
+    /* border: solid; */
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+}

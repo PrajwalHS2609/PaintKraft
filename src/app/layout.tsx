@@ -10,7 +10,8 @@ import Loader from './../components/Loader/Loader';
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import BangaloreLpNavbar from './../components/BangaloreLp/BangaloreLpNavbar/BangaloreLpNavbar';
-import Script  from 'next/script';
+import Script from 'next/script';
+import HomeConstructionLpNav from './../components/HomeConstructionLp/HomeConstructionLpNav/HomeConstructionLpNav';
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
@@ -26,6 +27,7 @@ export default function RootLayout({
   const isCoimbatoreLanding = pathname.startsWith("/coimbatore");
   const isMysoreLanding = pathname.startsWith("/mysore");
   const isHyderabadLanding = pathname.startsWith("/hyderabad");
+  const isHouseConstructionLp = pathname.startsWith("/home-construction-in-bangalore");
 
   const [loading, setLoading] = useState(true);
 
@@ -131,7 +133,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {isBangloreLanding ? (<BangaloreLpNavbar />) : isCoimbatoreLanding ? (<BangaloreLpNavbar />): isMysoreLanding ? (<BangaloreLpNavbar />): isHyderabadLanding ? (<BangaloreLpNavbar />) : <LpPaintNavbar />}
+        {isBangloreLanding ? (<BangaloreLpNavbar />) : isCoimbatoreLanding ? (<BangaloreLpNavbar />) : isMysoreLanding ? (<BangaloreLpNavbar />) : isHyderabadLanding ? (<BangaloreLpNavbar />) : isHouseConstructionLp ? (<HomeConstructionLpNav />) : <LpPaintNavbar />}
         {loading ? <Loader /> : children}
         <LpPaintFooter />
       </body>
