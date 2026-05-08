@@ -42,3 +42,122 @@
   height: 100%;
   object-fit: contain;
 }
+/* PaintkraftLpHeroForm.css */
+
+.paintkraftHeroFormContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.paintkraftHeroFormWrapper {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.paintkraftHeroFormHead {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.paintkraftHeroFormHead h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.paintkraftHeroFormHead h2 span {
+  color: var(--lp1Custom2);
+}
+
+.paintkraftHeroFormHead p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.paintkraftHeroForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.paintkraftHeroInputGroup input,
+.paintkraftHeroInputGroup select,
+.paintkraftHeroInputGroup textarea {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+.paintkraftHeroInputGroup input:focus,
+.paintkraftHeroInputGroup select:focus,
+.paintkraftHeroInputGroup textarea:focus {
+  border-color: var(--lp1Custom2);
+}
+
+.paintkraftHeroInputGroup textarea {
+  resize: none;
+}
+
+.paintkraftHeroInputGroup:last-of-type {
+  grid-column: span 2;
+}
+
+.paintkraftHeroFormBtn {
+  grid-column: span 2;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: var(--lp1Custom2);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.paintkraftHeroFormBtn:hover {
+  background:var(--lp1Custom1);
+}
+
+@media screen and (max-width: 768px) {
+  .paintkraftHeroFormWrapper {
+    padding: 25px;
+  }
+
+  .paintkraftHeroForm {
+    grid-template-columns: 1fr;
+  }
+
+  .paintkraftHeroInputGroup:last-of-type,
+  .paintkraftHeroFormBtn {
+    grid-column: span 1;
+  }
+
+  .paintkraftHeroFormHead h2 {
+    font-size: 2rem;
+  }
+
+  .paintkraftHeroFormContainer {
+    margin-top: 0px;
+  }
+}
+.HomeConstructionLpHero-container{
+  height: 100%;
+  width: 100%;
+  /* border: solid red; */
+}

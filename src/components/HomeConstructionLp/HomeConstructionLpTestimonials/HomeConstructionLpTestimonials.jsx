@@ -54,23 +54,29 @@ const SamplePrevArrow = ({ className, style, onClick }) => {
 const HomeConstructionLpTestimonials = () => {
   const testimonials = [
     {
-      text: `I had the pleasure of working with Paintkraft on a multistory
-        project. The team was incredibly knowledgeable, experienced, and
-        professional from start to finish. They brought my vision to life, and
-        the final result exceeded all my expectations. Throughout the process,
-        the director, Mr. SriHarsha, kept me informed, addressed all my
-        questions, and promptly resolved any issues. The construction crew was
-        quick, courteous, and consistently maintained a neat and organized
-        workspace, ensuring minimal disruption to my daily routine.`,
-      name: "Dr. Srinivas Prasad R.H",
+      text: `Red Hills Infra delivered our dream home exactly the way we imagined. The construction quality, planning, and project execution were outstanding from start to finish.`,
+      name: "Karthik R",
+      loc: "JP Nagar",
     },
     {
-      text: `Thank you for building our dream home. The project was managed professionally, with everything organized and on track. We received excellent support with paperwork and administrative procedures. If you're looking for exceptional quality, outstanding customer service, and a commitment to innovation, Paintkraft is the company for you. Their expertise and attention to detail ensure that your new home will be built to the highest standards, with your satisfaction as their top priority.`,
-      name: "Amith",
+      text: `We are extremely satisfied with the professionalism shown by Red Hills Infra. Their team maintained transparency throughout the project and completed the work within the promised timeline.`,
+      name: "Divya Shetty",
+      loc: "Yelahanka",
     },
     {
-      text: `We contacted them for the interior work of our house. They understood our requirements, provided designs accordingly, and executed the final work precisely as we envisioned.`,
-      name: "Ravichandra",
+      text: `Choosing Red Hills Infra was one of the best decisions for our home construction project. Their attention to detail and modern design ideas truly impressed our family.`,
+      name: "Sandeep Gowda",
+      loc: "Kanakapura Road",
+    },
+    {
+      text: `The entire experience with Red Hills Infra was smooth and stress-free. Their engineers and support staff were very responsive and ensured quality work at every stage.`,
+      name: "Pooja Nair",
+      loc: "Whitefield",
+    },
+    {
+      text: `Red Hills Infra transformed our vision into reality with excellent craftsmanship and professional project management. Highly recommended for anyone planning home construction in Bangalore`,
+      name: "Rohith Kumar",
+      loc: "HSR Layout",
     },
   ];
 
@@ -113,11 +119,11 @@ const HomeConstructionLpTestimonials = () => {
           {testimonials.map((item, index) => (
             <div className="testiMainContent" key={index}>
               <div className="testimonialCardContainer">
-                <p>
-                  {item.text}
-                  <br /> <br />
-                  <h4>- {item.name}</h4>
-                </p>
+                <p>{item.text}</p>
+                <div className="testimonialCardContainer-name">
+                  <h4>— {item.name}</h4>
+                  <h6>{item.loc}</h6>
+                </div>
               </div>
             </div>
           ))}

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import "./HomeConstructionLpPackage.css";
 import HomeConstructionLpPackageList from "./HomeConstructionLpPackageList";
@@ -7,9 +7,11 @@ const HomeConstructionLpPackageMenu = () => {
   const [activePackage, setActivePackage] = useState(null);
 
   const headContent = [
-    { head1: "Budget Home", head2: "1,2 & 3 BHK" },
-    { head1: "Luxury Home", head2: "2,3,4 & 5 BHK" },
-    { head1: "Villa & Bungalows", head2: "2,3,4 & 5 BHK" },
+    { head1: "Standard Package", head2: "Rs 1850/*- Sq Ft" },
+    { head1: "Classic", head2: "Rs 1999/*- Sq Ft" },
+    { head1: "Premium", head2: "Rs 2099/*- Sq Ft" },
+    { head1: "Elite", head2: "Rs 2249/*- Sq Ft" },
+    { head1: "Exclusive", head2: "Rs 2499/*- Sq Ft" },
   ];
 
   const handleToggle = (index) => {

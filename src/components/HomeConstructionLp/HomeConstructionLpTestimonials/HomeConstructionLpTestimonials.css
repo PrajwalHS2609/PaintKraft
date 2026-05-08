@@ -27,7 +27,8 @@
   margin-left: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .testiMainContent {
   /* border: solid; */
@@ -42,13 +43,25 @@
   font-weight: bold;
   text-align: center;
 }
+.testimonialCardContainer-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.testimonialCardContainer-name > h4 {
+  width: 100%;
+}
+.testimonialCardContainer-name > h6 {
+  text-align: start;
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .testiHeadContainer > h2 {
     /* border: solid; */
     width: 100%;
     font-size: 25px;
-      padding:10px;
-
+    padding: 10px;
   }
   .testiContainer {
     /* border: solid; */

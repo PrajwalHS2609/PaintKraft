@@ -16,31 +16,53 @@ const HomeConstructionLpPackageList = ({ activePackage }) => {
     {
       title: "ARCHITECTURAL DESIGN",
       details: [
-        "Space Planning",
-        "Modern Elevation",
-        "Vastu Planning",
-        "Furniture Layout",
+        "Working drawing for all works",
+        "Schedule of Openings",
+        "Section and Elevation",
       ],
     },
     {
       title: "STRUCTURAL DESIGNING",
-      details: [""],
+      details: [
+        "Structural Design as per IS Code.",
+        "Good for construction drawings",
+        "Soil Test report",
+      ],
     },
     {
       title: "MEP DESIGNING",
-      details: [""],
+      details: [
+        "Electrical Layout",
+        "Plumbing Water Line Layout",
+        "Plumbing Drainage Line Layout",
+      ],
     },
     {
       title: "INTERIOR DESIGNING",
-      details: [""],
+      details: ["2D Furniture layout"],
     },
     {
       title: "GOVERNMENT LIAISON ASSISTANCE",
-      details: [""],
+      details: [
+        "BUILD UR SPACE will provide liaison assistance with different government agencies, obtain permissions, licenses & sanction fee for the following (if applicable)",
+        "Construction Plan Sanction | Temporary Electricity connection",
+        "Permanent electrical connection",
+        "Water connection | Sewage connection",
+      ],
     },
     {
       title: "CIVIL CONSTRUCTION",
-      details: [""],
+      details: ["Floor to floor height – 9'6",
+"Steel (500 TMT Bars) – Kamadhenu Equivalents",
+"Cement (Grade 43 or 53 as needed) – Penna/Dalmia",
+"UG Sump built with solid blocks of 6” thickness & waterproof plastered 6000 lts", 
+"Concrete – M20 grade RMC",
+"Standard Block walls – 6” & 4” thickness",
+"Internal, external and toilet wall – column joints plastering with chicken mesh",
+"Waterproofing compound – Dr.Fixit FOSROC for external walls",
+"Cement based waterproofing",
+"Steel/concrete lofts – Not included",
+"Anti termite treatment"]
     },
     {
       title: "FLOORING & WALL TILING",
@@ -93,8 +115,8 @@ const HomeConstructionLpPackageList = ({ activePackage }) => {
       {activePackage === 0 && (
         <div className="packageCard-container">
           <div className="packageCard">
-            <h2 className="packageTitle1">Budget Home</h2>
-            <h1 className="packageTitle2">1,2 & 3 BHK</h1>
+            <h2 className="packageTitle1">Standard Package</h2>
+            <h1 className="packageTitle2">Rs 1850/*- Sq Ft</h1>
 
             <Accordion flush className="packageAccordion-container">
               {standardPackage.map((item, index) => (
@@ -121,11 +143,11 @@ const HomeConstructionLpPackageList = ({ activePackage }) => {
         </div>
       )}
 
-{activePackage === 1 && (
+      {activePackage === 1 && (
         <div className="packageCard-container">
           <div className="packageCard">
-            <h2 className="packageTitle1">Luxury Home</h2>
-            <h1 className="packageTitle2">2,3,4 & 5 BHK</h1>
+            <h2 className="packageTitle1">Classic</h2>
+            <h1 className="packageTitle2">Rs 1999/*- Sq Ft</h1>
 
             <Accordion flush className="packageAccordion-container">
               {standardPackage.map((item, index) => (
@@ -154,8 +176,8 @@ const HomeConstructionLpPackageList = ({ activePackage }) => {
       {activePackage === 2 && (
         <div className="packageCard-container">
           <div className="packageCard">
-            <h2 className="packageTitle1">Villa & Bungalows</h2>
-            <h1 className="packageTitle2">2,3,4 & 5 BHK</h1>
+            <h2 className="packageTitle1">Premium</h2>
+            <h1 className="packageTitle2">Rs 2099/*- Sq Ft</h1>
 
             <Accordion flush className="packageAccordion-container">
               {standardPackage.map((item, index) => (

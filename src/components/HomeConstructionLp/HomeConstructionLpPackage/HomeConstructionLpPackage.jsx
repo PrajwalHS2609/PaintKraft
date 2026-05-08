@@ -3,7 +3,7 @@ import HomeConstructionLpPackageMenu from './HomeConstructionLpMenu'
 
 const HomeConstructionLpPackage = () => {
   return (
-    <div className='paintkraftLpPackage-container'>
+    <div className='paintkraftLpPackage-container'id='packages'>
       <HomeConstructionLpPackageMenu/>
     </div>
   )

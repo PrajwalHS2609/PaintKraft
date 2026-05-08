@@ -21,7 +21,7 @@ const HomeConstructionLpWhyChoose = () => {
     { img:NoSub, text:"No sub-contracting" },
   ];
   return (
-    <div className="homeWhyContainer">
+    <div className="homeWhyContainer" id="why">
       <div className="homeWhyContent">
         <div className="homeWhyHeadContainer">
           <h2>

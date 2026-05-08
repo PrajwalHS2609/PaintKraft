@@ -8,11 +8,6 @@ const HomeConstructionLpHero = () => {
     <div className='HomeConstructionLpHero-container'>
       <div className="HomeConstructionLpHero-Content">
         <Image src={HomeConstructionBanner} alt="HomeConstructionBanner" />
-        <PaintkraftLpHeroForm />
-      </div>
-      <div className="HomeConstructionLpHero-Content">
-        {/* <Image src={splitImg} alt="" />
-        <Image src={splitContent} alt="" /> */}
       </div>
       <PaintkraftLpHeroForm />
     </div>

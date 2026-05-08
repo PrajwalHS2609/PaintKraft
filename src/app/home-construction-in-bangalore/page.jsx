@@ -7,6 +7,7 @@ import HomeConstructionLpProcess from "../../components/HomeConstructionLp/HomeC
 import HomeConstructionLpWhyChoose from "../../components/HomeConstructionLp/HomeConstructionLpWhyChoose/HomeConstructionLpWhyChoose";
 import HomeConstructionLpTestimonials from "../../components/HomeConstructionLp/HomeConstructionLpTestimonials/HomeConstructionLpTestimonials";
 import HomeConstructionLpPartners from "../../components/HomeConstructionLp/HomeConstructionLpPartners/HomeConstructionLpPartners";
+import HomeConstructionLpFaq from "../../components/HomeConstructionLp/HomeConstructionLpFaq/HomeConstructionLpFaq";
 
 const PaintkraftLp = () => {
   return (
@@ -18,6 +19,7 @@ const PaintkraftLp = () => {
       <HomeConstructionLpWhyChoose />
       <HomeConstructionLpTestimonials/>
       <HomeConstructionLpPartners/>
+      <HomeConstructionLpFaq/>
       <HomeConstructionLpBottom />
     </div>
   );
