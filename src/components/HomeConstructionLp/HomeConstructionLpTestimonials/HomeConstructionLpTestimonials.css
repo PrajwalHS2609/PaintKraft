@@ -24,13 +24,10 @@
   width: 85%;
 }
 
-/* IMPORTANT */
-.slick-slide > div {
-  margin: 0 10px;
-}
 
 .testiMainContent {
   height: 100%;
+  margin-left: 20px;
 }
 
 .testimonialCardContainer {
@@ -116,11 +113,4 @@
   .testimonialCardContainer-name > h6 {
     font-size: 13px;
   }
-}
-.slick-track {
-  display: flex !important;
-}
-
-.slick-slide {
-  height: inherit !important;
 }
