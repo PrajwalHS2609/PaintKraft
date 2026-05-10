@@ -15,7 +15,19 @@ const HomeConstructionLpPackageMenu = () => {
   ];
 
   const handleToggle = (index) => {
-    setActivePackage(activePackage === index ? null : index);
+    setActivePackage(index);
+
+    // Scroll to package list
+    setTimeout(() => {
+      const element = document.getElementById("packagelist");
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
   };
 
   return (
@@ -28,11 +40,11 @@ const HomeConstructionLpPackageMenu = () => {
             onClick={() => handleToggle(index)}
           >
             <h3 className="lpPackageMenuCard-head2">{x.head1}</h3>
-            <h2 className="lpPackageMenuCard-head1">{x.head2}</h2>
+            <h2 className="lpPackageMenuCard-head1" >{x.head2}</h2>
           </div>
         ))}
       </div>
-
+<span id="packagelist" ></span>
       <HomeConstructionLpPackageList activePackage={activePackage} />
     </>
   );

@@ -25,7 +25,7 @@ const HomeConstructionLpWhyChoose = () => {
       <div className="homeWhyContent">
         <div className="homeWhyHeadContainer">
           <h2>
-            WHY CHOOSE <span>Paintkraft</span> ?
+            WHY CHOOSE <span>Red Hill Infra</span> ?
           </h2>
         </div>{" "}
         <div className="homeWhyMainContainer">

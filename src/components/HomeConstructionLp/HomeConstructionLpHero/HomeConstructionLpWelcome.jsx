@@ -4,11 +4,11 @@ const HomeConstructionLpWelcome = () => {
   return (
  <div className="welcomeContainer">
       <h1>
-        Welcome to <span>PaintKraft</span>, your trusted partner in
+        Welcome to <span>Red Hill Infra</span>, your trusted partner in
         construction solutions.
       </h1>
       <p>
-        At <span>PaintKraft</span>, we understand the importance of creating
+        At <span>Red Hill Infra</span>, we understand the importance of creating
         spaces that meet your functional needs and reflect your unique style and
         personality. Whether you want to build a new structure or transform an
         existing space, we're here to bring your vision to life.
@@ -21,7 +21,7 @@ const HomeConstructionLpWelcome = () => {
       </p>
       <p>
         Welcome to a world of endless possibilities and outstanding
-        craftsmanship. Welcome to PaintKraft!
+        craftsmanship. Welcome to Red Hill Infra!
       </p>
     </div>
   )
