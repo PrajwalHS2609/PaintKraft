@@ -8,6 +8,8 @@ import HomeConstructionLpWhyChoose from "../../components/HomeConstructionLp/Hom
 import HomeConstructionLpTestimonials from "../../components/HomeConstructionLp/HomeConstructionLpTestimonials/HomeConstructionLpTestimonials";
 import HomeConstructionLpPartners from "../../components/HomeConstructionLp/HomeConstructionLpPartners/HomeConstructionLpPartners";
 import HomeConstructionLpFaq from "../../components/HomeConstructionLp/HomeConstructionLpFaq/HomeConstructionLpFaq";
+import HomeConstructionLpFooter from "../../components/HomeConstructionLp/HomeConstructionLpFooter/HomeConstructionLpFooter";
+import HomeConstructionLpWhatsApp from "../../components/HomeConstructionLp/HomeConstructionLpWhatsApp/HomeConstructionLpWhatsApp";
 
 const PaintkraftLp = () => {
   return (
@@ -21,6 +23,8 @@ const PaintkraftLp = () => {
       <HomeConstructionLpPartners/>
       <HomeConstructionLpFaq/>
       <HomeConstructionLpBottom />
+      <HomeConstructionLpFooter/>
+      <HomeConstructionLpWhatsApp/>
     </div>
   );
 };

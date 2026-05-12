@@ -12,6 +12,7 @@ import { usePathname } from "next/navigation";
 import BangaloreLpNavbar from './../components/BangaloreLp/BangaloreLpNavbar/BangaloreLpNavbar';
 import Script from 'next/script';
 import HomeConstructionLpNav from './../components/HomeConstructionLp/HomeConstructionLpNav/HomeConstructionLpNav';
+import WhatsApp from './../components/WhatsApp/WhatsApp';
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
@@ -135,7 +136,9 @@ export default function RootLayout({
         </noscript>
         {isBangloreLanding ? (<BangaloreLpNavbar />) : isCoimbatoreLanding ? (<BangaloreLpNavbar />) : isMysoreLanding ? (<BangaloreLpNavbar />) : isHyderabadLanding ? (<BangaloreLpNavbar />) : isHouseConstructionLp ? (<HomeConstructionLpNav />) : <LpPaintNavbar />}
         {loading ? <Loader /> : children}
-        <LpPaintFooter />
+        {!isHouseConstructionLp && <LpPaintFooter />}
+        {!isHouseConstructionLp && <WhatsApp />}
+
       </body>
     </html>
   );

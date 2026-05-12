@@ -1,0 +1,14 @@
+.homeConstructionFooter-container {
+  /* border: solid red; */
+  width: 100%;
+  background-color: var(--lp1Custom1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeConstructionFooter-container > p {
+  height: 100%;
+  margin-top: 15px;
+  color: white;
+  font-size: 18px;
+}
